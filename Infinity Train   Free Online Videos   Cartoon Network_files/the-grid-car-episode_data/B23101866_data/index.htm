@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="ad.size" content="width=728,height=90"><title>lego-cartoon-network-hidden-side-banners-728x90-DCM</title><script src="index_data/draggable_2.js" type="text/javascript"></script><script src="index_data/ThrowPropsPlugin.js" type="text/javascript"></script><script src="index_data/banner_002.js" type="text/javascript"></script><script src="index_data/banner_003.js" type="text/javascript"></script><script src="index_data/banner.js" type="text/javascript"></script><script type="text/javascript">var banner = new Banner();</script><script type="text/javascript">var clickTag = "https://www.google.com";</script><link rel="stylesheet" href="index_data/style.css"><script type="text/javascript">
+    
+  (function() {
+    var MAX_URL_PARAM_LENGTH = 34;
+    var CLICK_X_URL_KEY = 'nx';
+    var CLICK_Y_URL_KEY = 'ny';
+    var CREATIVE_DIMENSIONS_KEY = 'dim';
+    var AD_URL_PARAM = '&adurl=';
+
+    var relegateNavigation = '';
+    var urlParamMap = {};
+
+    urlParamMap[CLICK_X_URL_KEY] = null;
+    urlParamMap[CLICK_Y_URL_KEY] = null;
+    urlParamMap[CREATIVE_DIMENSIONS_KEY] = null;
+
+    var handleClickTagMessage = function(e) {
+      try {
+        var eventData = JSON.parse(e.data);
+      } catch (err) {
+        return;
+      }
+      if (eventData.isInitClickTag) {
+        if (eventData.clickTags) {
+          for (var i = 0; i < eventData.clickTags.length; i++) {
+            var clkTag = eventData.clickTags[i];
+            window[clkTag.name] = clkTag.url;
+          }
+        } else if (eventData.clickTag) {
+          window.clickTag = eventData.clickTag;
+        }
+        relegateNavigation = eventData.relegateNavigation;
+      }
+    };
+
+    var storeClickCoordinates = function(e) {
+      urlParamMap[CLICK_X_URL_KEY] = Math.round(e.clientX);
+      urlParamMap[CLICK_Y_URL_KEY] = Math.round(e.clientY);
+    };
+
+    var getCreativeDimensions = function() {
+      return window.innerWidth + 'x' + window.innerHeight;
+    }
+
+    var getExitClickParams = function(e) {
+      urlParamMap[CREATIVE_DIMENSIONS_KEY] = getCreativeDimensions();
+
+      var exitParams = '';
+      for (var key in urlParamMap) {
+        exitParams += '&' + key + '=';
+        if (urlParamMap[key] !== null) {
+          exitParams += urlParamMap[key];
+        }
+      }
+      return exitParams;
+    }
+
+    var appendExitClickParams = function(url) {
+      var adUrlIndex = url.toLowerCase().indexOf(AD_URL_PARAM);
+      var paramsToBeAdded = getExitClickParams();
+      if (adUrlIndex > -1 && paramsToBeAdded.length <= MAX_URL_PARAM_LENGTH) {
+        url = url.substr(0, adUrlIndex) + paramsToBeAdded +
+          url.substr(adUrlIndex);
+      };
+      return url;
+    };
+
+    if (open.call) {
+      window.open = function(open) {
+        return function(url, name, features) {
+          url = appendExitClickParams(url);
+          if (relegateNavigation === 'parent') {
+            var message = {'clickTag': url, 'isPostClickTag': true};
+            parent.postMessage(JSON.stringify(message), '*');
+          } else {
+            var args = [url, name];
+            if (features) {
+              args.push(features);
+            }
+            open.apply(window, args);
+          }
+        };
+      }(window.open);
+    }
+
+    if (window.addEventListener) {
+      window.addEventListener(
+          'message', handleClickTagMessage, false);
+      window.addEventListener('mousedown', storeClickCoordinates, true);
+    } else {
+      window.attachEvent('onmessage', handleClickTagMessage);
+    }
+  })();
+    
+  </script><script type="text/javascript" src="index_data/tweenmax_2.js"></script></head><body><div class="banner"><div class="preloader" style="visibility: hidden; opacity: 0;"><div class="circle"></div></div><div style="background-size: 100% 100%; background-position: center center; background-repeat: no-repeat; height: 90px; width: 728px; top: 0px; position: absolute; right: 0px; background-image: url(&quot;https://s0.2mdn.net/8344765/1567112630476/english_aidlocalasset_cartoonNetwork_dareToLearnMore_HiddenSide_728x90/images/bg1.jpg&quot;);" id="bg1"></div><div id="bg2Container" style="top: 0px; position: absolute; overflow: hidden; right: 0px; height: 90px; width: 180px; transform: matrix(1, 0, -1.73205, 0.99999, 0, 0);"><div style="background-size: 100% 100%; background-position: center center; background-repeat: no-repeat; height: 90px; width: 728px; top: 0px; position: absolute; right: 0px; background-image: url(&quot;https://s0.2mdn.net/8344765/1567112630476/english_aidlocalasset_cartoonNetwork_dareToLearnMore_HiddenSide_728x90/images/bg2.jpg&quot;); transform: matrix(1, 0, 1.73205, 0.99999, 0, 0);" id="bg2"></div></div><div id="legal" style="position: absolute; z-index: 57; color: rgb(255, 255, 255); font-size: 6px; font-family: Arial; text-align: left; width: 107px; left: 13px; bottom: 21px;">© 2019 The LEGO Group.</div><div style="background-size: 100% 100%; background-position: center center; background-repeat: no-repeat; height: 90px; width: 728px; top: 0px; left: 0px; position: absolute; background-image: url(&quot;https://s0.2mdn.net/8344765/1567112630476/english_aidlocalasset_cartoonNetwork_dareToLearnMore_HiddenSide_728x90/images/logo.png&quot;);" id="logo"></div><div id="boundingBox" style="top: 0px; position: absolute; opacity: 0.6; left: 40px; height: 90px; width: 685px;"></div><div id="slider" style="top: 0px; position: absolute; right: 0px; height: 118px; width: 218px; transform: translate3d(-70px, 0px, 0px); cursor: move; touch-action: pan-y; user-select: none;"><div style="background-size: 100% 100%; background-position: center center; background-repeat: no-repeat; height: 118px; width: 218px; top: 0px; left: 0px; position: absolute; background-image: url(&quot;https://s0.2mdn.net/8344765/1567112630476/english_aidlocalasset_cartoonNetwork_dareToLearnMore_HiddenSide_728x90/images/slider1.png&quot;);" id="slider1"></div><div style="background-size: 100% 100%; background-position: center center; background-repeat: no-repeat; height: 118px; width: 218px; top: 0px; left: 0px; position: absolute; background-image: url(&quot;https://s0.2mdn.net/8344765/1567112630476/english_aidlocalasset_cartoonNetwork_dareToLearnMore_HiddenSide_728x90/images/slider2.png&quot;); transform-origin: 49px 75px 0px; transform: matrix(1, 0, 0, 1, 0, 0); visibility: hidden; opacity: 0;" id="slider2"></div><div style="background-size: 100% 100%; background-position: center center; background-repeat: no-repeat; height: 118px; width: 218px; top: 0px; left: 0px; position: absolute; background-image: url(&quot;https://s0.2mdn.net/8344765/1567112630476/english_aidlocalasset_cartoonNetwork_dareToLearnMore_HiddenSide_728x90/images/slider3.png&quot;);" id="slider3"></div></div><div style="background-size: 100% 100%; background-position: center center; background-repeat: no-repeat; height: 90px; width: 159px; top: 0px; position: absolute; z-index: 99999; right: 0px; background-image: url(&quot;https://s0.2mdn.net/8344765/1567112630476/english_aidlocalasset_cartoonNetwork_dareToLearnMore_HiddenSide_728x90/images/cta.png&quot;);" id="cta"></div></div></body></html>

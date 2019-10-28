@@ -1,0 +1,2269 @@
+/*--- HTML Attribute Defaults ---*/
+body { 
+	font: 100%  Arial, sans-serif;
+	min-width: 320px;
+} 		
+a {
+	text-decoration: none;
+}
+
+/*--- Universal Nav/Hat ---*/
+#hat_wrapper {
+	background: black;
+	height: 40px;
+	width: 100%;		
+}	
+#hat {
+	margin: 0 auto;
+	max-width: 965px;
+	width: 88%;			
+}
+#hat #hat_logo {
+	border-right: 2px solid #4d4d4d; 
+	color: white;
+	float: left;			
+	font: normal 16px/26px "cn-bold", Arial, sans-serif;
+	margin: 0.438em 0;
+	padding-right: 2.5em;
+	text-transform: uppercase;
+}	
+#hat #hat_logo a,
+#hat .item a:hover {
+	color: #FFF;
+}
+#hat .item a,
+#hat #hat_logo a:hover {
+	color: #808080;
+}	
+#hat .item {					
+	float: left;
+	font: normal 14px/40px "avenir-next-rounded-std-med", Arial, sans-serif;
+	margin-left: 2.875em;
+	text-transform: uppercase;			
+}	
+#hat .item.active a {
+	color: #ec008c;		
+}
+/*--- Epic Ads ---*/
+#ad-banner-wrapper {
+	text-align: center;
+	height: 100%;
+	margin: 11px auto 21px;
+}
+
+#ad_bnr_atf_01 {
+	display: inline-block;
+	border: 1px solid #000!important;
+	padding-right: 15px!important;
+	background: url('/static/images/global/ad-tag-large.png') no-repeat center right #000;
+}
+/* mobile ad container 1001px and more, hide it */
+@media only screen and (min-width:1001px) {
+	#ad-container-mobile {
+		display: none;
+	}
+}
+/* desktop ad container 1000px and less, hide it */
+@media only screen and (max-width:1000px) {
+	#ad-banner-wrapper {
+		display: none;
+	}
+}
+
+/* ========== cartoon-mobile-tout module ====================================================================== */
+#mobile-tout {
+	text-align: center;
+}
+#mobile-tout .mobile-tout-copy {
+	font: 26.5px "avenir-next-rounded-std-med", arial, helvetica, sans-serif;
+	color: black;
+	margin-bottom: 7px;
+}
+#mobile-tout #cartoon-mobile-tout-tablet .mobile-tout-copy {
+	font-size: 38px;
+}
+#mobile-tout .mobile-tout-image {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#mobile-tout .mobile-tout-image,
+#mobile-tout .squiggly-boi {
+	width: 100%;
+}
+#mobile-tout .mobile-tout-link {
+	font: 28.5px/63px cn-bold, Arial, Helvetica, sans-serif;
+	color: white;
+	background-color: black;
+}
+#mobile-tout:hover .mobile-tout-link {
+	background-color: #ED0080;
+}
+#mobile-tout .mobile-tout-column {
+	margin: 27px 0;
+	display: inline-block;
+	vertical-align: middle;
+}
+#mobile-tout #mobile-tout-column1 {
+	width: 43%;
+	margin-left: 3%;
+	margin-right: 3%;
+}
+#mobile-tout #mobile-tout-column1 .squiggly-boi {
+	width: 100%;
+	max-width: 381px; 
+}
+#mobile-tout #cartoon-mobile-tout-tablet #mobile-tout-column2 {
+	width: 45%;
+	padding-right: 5%;
+}
+#mobile-tout #cartoon-mobile-tout-tablet .mobile-tout-image {
+	margin-top: 0;
+}
+@media only screen and (min-width:1025px) {
+		#cartoon-mobile-tout-mobile{
+			display:none;
+		}
+		#cartoon-mobile-tout-tablet{
+			display:none;
+		}        
+		#cartoon-mobile-tout-desktop{
+			background-color:#fff;
+			float:left;
+			width:435px;
+			padding: 26px 19px;
+		}
+			#cartoon-mobile-tout-desktop .cartoon-mobile-tout-header{
+				font-family:avenir-next-rounded-std-med, Arial, Helvetica, sans-serif;
+				font-size:31px !important;
+				margin:0 24px;
+				line-height:100px;
+				text-transform:uppercase;
+			}
+				#cartoon-mobile-tout-desktop .cartoon-mobile-tout-icon{
+					vertical-align:middle;
+					height:50px;
+					margin-right:15px;
+					margin-top:-10px;
+					width:42px;
+				}
+			#cartoon-mobile-tout-desktop .cartoon-mobile-tout-info-wrapper{
+				background-color:#fff;
+				border:2px solid #7f7f7f;
+				color:#fff;
+				margin:0 19px 23px;
+				padding:4px;
+			}
+				#cartoon-mobile-tout-desktop .cartoon-mobile-tout-info{
+					background-color:#000;
+					color:inherit;
+					display:block;
+					padding:29px 25px;
+					position:relative;
+					text-decoration:none;
+				}
+				#cartoon-mobile-tout-desktop .cartoon-mobile-tout-info:hover .cartoon-mobile-tout-property-link{
+					color:#ec008c;
+					background-color:#fff;
+				}
+					#cartoon-mobile-tout-desktop .cartoon-mobile-tout-property-icon{
+						border:1px solid #fff;
+						float:left;
+						width:132px;
+					}
+					#cartoon-mobile-tout-desktop .cartoon-mobile-tout-property-text-wrapper{
+						float:left;
+						font-family:cn-bold, Arial, Helvetica, sans-serif;
+						position:relative;
+						height:134px;
+						margin-left:22px;
+						max-width:219px;
+						text-transform:uppercase;
+					}
+						#cartoon-mobile-tout-desktop .cartoon-mobile-tout-property-text{
+							font-size:31px !important;
+							line-height:31px;
+							max-height:93px;
+						}
+						#cartoon-mobile-tout-desktop .cartoon-mobile-tout-property-link{
+							background-color:#ec008c;
+							bottom:0px;
+							font-size:20px;
+							height:30px;
+							line-height:30px;
+							position:absolute;
+							text-align:center;
+							text-decoration:none;
+							width:154px;
+						}
+			#cartoon-mobile-tout-desktop .cartoon-mobile-tout-property-text-wrapper-off-air{
+				border-bottom:1px solid #fff;
+				border-top:1px solid #fff;
+				display:inline-block;
+				font-family:cn-bold, Arial, Helvetica, sans-serif;
+				height:132px;
+				margin-left:20px;
+			}
+				#cartoon-mobile-tout-desktop .cartoon-mobile-tout-off-air-header{
+					font-size:58px;
+					margin-top:20px;
+					text-align:center;
+					text-transform:uppercase;
+				}
+				#cartoon-mobile-tout-desktop .cartoon-mobile-tout-off-air-text{
+					font-size:19px;
+					margin-top:5px;
+					text-align:center;
+					text-transform:uppercase;
+				}
+				#cartoon-mobile-tout-desktop .cartoon-mobile-tout-off-air-time{
+					text-transform:lowercase;
+				}
+}
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+		#cartoon-mobile-tout-mobile{
+			display:none;
+		}
+		#cartoon-mobile-tout-desktop{
+			display:none;
+		}        
+		#cartoon-mobile-tout-tablet{
+			background-color:#fff;
+			display:block;
+			width:100%;
+		}
+		#cartoon-mobile-tout-tablet #mobile-tout-image-tablet {
+			width: 100%;
+		}
+			#cartoon-mobile-tout-desktop .cartoon-mobile-tout-header{
+				float:left;
+				font-family:avenir-next-rounded-std-med, Arial, Helvetica, sans-serif;
+				font-size:39px;
+				margin: 82.5px 2.5%;
+				text-transform:uppercase;
+				width:34%;
+			}
+				#cartoon-mobile-tout-desktop .cartoon-mobile-tout-icon{
+					float:left;
+					margin-right:6.5%;
+					vertical-align:middle;
+					width:22.5%;
+				}
+				#cartoon-mobile-tout-desktop .cartoon-mobile-tout-desktop-header-text{
+					display:block;
+					float:left;
+					width:70%;
+				}
+			#cartoon-mobile-tout-desktop .cartoon-mobile-tout-info-wrapper{
+				background-color:#fff;
+				border:2px solid #7f7f7f;
+				color:#fff;
+				float:right;
+				margin: 30px 3% 30px 0;
+				padding:4px;
+				width:55.5%
+			}
+				#cartoon-mobile-tout-desktop .cartoon-mobile-tout-info{
+					background-color:#000;
+					color:inherit;
+					display:block;
+					padding:29px 5%;
+					position:relative;
+					text-decoration:none;
+				}
+				#cartoon-mobile-tout-desktop .cartoon-mobile-tout-info:hover .cartoon-mobile-tout-property-link{
+					color:#ec008c;
+					background-color:#fff;
+				}
+					#cartoon-mobile-tout-desktop .cartoon-mobile-tout-property-icon{
+						border:1px solid #fff;
+						display:inline-block;
+						margin-right:4%;
+						width:25.3%;
+						max-width:121px;
+						vertical-align:middle;
+					}
+					#cartoon-mobile-tout-desktop .cartoon-mobile-tout-property-text-wrapper{
+						display:inline-block;
+						font-family:Arial, Helvetica, sans-serif;
+						position:relative;
+						text-transform:uppercase;
+						vertical-align:middle;
+						width:69%
+					}
+						#cartoon-mobile-tout-desktop .cartoon-mobile-tout-property-text{
+							font-family:cn-bold, Arial, Helvetica, sans-serif;
+							font-size:31px;
+						}
+						#cartoon-mobile-tout-desktop .cartoon-mobile-tout-property-link{
+							background-color:#ec008c;
+							font-family:cn-bold, Arial, Helvetica, sans-serif;
+							font-size:20px;
+							height:30px;
+							line-height:30px;
+							margin-top:5%;
+							text-align:center;
+							text-decoration:none;
+							width:154px;
+						}
+			#cartoon-mobile-tout-desktop .cartoon-mobile-tout-property-text-wrapper-off-air{
+				display:inline-block;
+				font-family:cn-bold, Arial, Helvetica, sans-serif;
+				vertical-align:middle;
+				width:69%;
+			}
+				#cartoon-mobile-tout-desktop .cartoon-mobile-tout-off-air-header{
+					font-size:58px;
+					text-align:center;
+					text-transform:uppercase;
+				}
+				#cartoon-mobile-tout-desktop .cartoon-mobile-tout-off-air-text{
+					font-size:19px;
+					margin-top:5px;
+					text-align:center;
+					text-transform:uppercase;
+				}
+				#cartoon-mobile-tout-desktop .cartoon-mobile-tout-off-air-time{
+					text-transform:lowercase;
+				}
+}
+@media only screen and (min-width : 971px) and (max-width : 999px) {
+			#cartoon-mobile-tout-desktop .cartoon-mobile-tout-header{
+				font-size:38px;
+			}
+						#cartoon-mobile-tout-desktop .cartoon-mobile-tout-property-text{
+							font-size:28px;
+						}
+}
+@media only screen and (min-width : 921px) and (max-width : 970px) {
+			#cartoon-mobile-tout-desktop .cartoon-mobile-tout-header{
+				font-size:36px;
+			}
+						#cartoon-mobile-tout-desktop .cartoon-mobile-tout-property-text{
+							font-size:27px;
+						}
+}
+@media only screen and (min-width : 871px) and (max-width : 920px) {
+			#cartoon-mobile-tout-desktop .cartoon-mobile-tout-header{
+				font-size:34px;
+			}
+						#cartoon-mobile-tout-desktop .cartoon-mobile-tout-property-text{
+							font-size:26px;
+						}
+}
+@media only screen and (min-width : 821px) and (max-width : 870px) {
+			#cartoon-mobile-tout-desktop .cartoon-mobile-tout-header{
+				font-size:32px;
+			}
+						#cartoon-mobile-tout-desktop .cartoon-mobile-tout-property-text{
+							font-size:25px;
+						}
+}
+@media only screen and (min-width : 768px) and (max-width : 820px) {
+			#cartoon-mobile-tout-desktop .cartoon-mobile-tout-header{
+				font-size:30px;
+			}
+						#cartoon-mobile-tout-desktop .cartoon-mobile-tout-property-text{
+							font-size:24px;
+						}
+}
+@media only screen and (min-width:481px) and (max-width:767px) {
+		#cartoon-mobile-tout-desktop{
+			display:none;
+		}
+		#cartoon-mobile-tout-tablet{
+			display:none;
+		}        
+		#cartoon-mobile-tout-mobile{
+			background-color:#000;
+			color:#fff;
+			margin-bottom:15px;
+		}
+			#cartoon-mobile-tout-mobile .cartoon-mobile-tout-mobile-wrapper{
+				color:inherit;
+				display:block;
+				font-family:avenir-next-rounded-std-med, Arial, Helvetica, sans-serif;
+				font-size:38px;
+				line-height:60px;
+				padding:20px 25px;
+				text-decoration:none;
+			}
+				#cartoon-mobile-tout-mobile .cartoon-mobile-tout-icon{
+					float:left;
+					margin: 0 12px;
+				}
+				#cartoon-mobile-tout-mobile .cartoon-mobile-tout-mobile-text{
+					color:#fff;
+					float:left;
+					margin-left:4%;
+					text-transform:uppercase;
+					font-size: 32px;
+				}
+				#cartoon-mobile-tout-mobile .cartoon-mobile-tout-mobile-arrow{
+					float:right;
+				}
+}
+@media only screen and (max-width:480px) {
+		#cartoon-mobile-tout-desktop{
+			display:none;
+		}
+		#cartoon-mobile-tout-tablet{
+			display:none;
+		}        
+		#cartoon-game-tout-tablet{
+			display:none;
+		}
+		#cartoon-mobile-tout-mobile{
+			background-color:#000;
+			color:#fff;
+			margin-bottom:15px;
+		}
+			#cartoon-mobile-tout-mobile .cartoon-mobile-tout-mobile-wrapper{
+				color:inherit;
+				display:block;
+				font-family:avenir-next-rounded-std-med, Arial, Helvetica, sans-serif;
+				font-size:19px;
+				line-height:40px;
+				padding:10px 12.5px;
+				text-decoration:none;
+			}
+				#cartoon-mobile-tout-mobile .cartoon-mobile-tout-icon{
+					float:left;
+					width: 20px;
+					margin: 0 5px;
+				}
+				#cartoon-mobile-tout-mobile .cartoon-mobile-tout-mobile-text{
+					color:#fff;
+					float:left;
+					margin-left:4%;
+					text-transform:uppercase;
+				}
+				#cartoon-mobile-tout-mobile .cartoon-mobile-tout-mobile-arrow{
+					float:right;
+					font-size:25px;
+				}
+}
+/* ========== End of cartoon-mobile-tout module ====================================================================== */
+/* ========== cartoon-game-tout module ====================================================================== */
+@media only screen and (min-width:1025px) {
+		#cartoon-game-tout-mobile{
+			display:none;
+		}
+		#cartoon-game-tout-tablet{
+			display:none;
+		}
+		#cartoon-game-tout-desktop{
+			background-color:#fff;
+			float:right;
+			margin-left:30px;
+			width:468px;
+		}
+			#cartoon-game-tout-desktop .cartoon-game-tout-link-wrap{
+					color:inherit;
+					display:block;
+					margin:24px 30px;
+					text-decoration:none;
+			}
+			#cartoon-game-tout-desktop .cartoon-game-tout-link-wrap:hover .cartoon-game-tout-link{
+				background-color:#000;
+				color:#fff;
+			}
+				#cartoon-game-tout-desktop .cartoon-game-tout-header{
+					background-color:#000;
+					color:#fff;
+					font-family:cn-bold, Arial, Helvetica, sans-serif;
+					font-size:34.2px;
+					height:60px;
+					line-height:60px;
+					margin-bottom:2px;
+					text-align:center;
+					text-transform:uppercase;
+				}
+				#cartoon-game-tout-desktop .cartoon-game-tout-game-banner{
+					background-color:#000;
+					color:#fff;
+					font-family:cn-bold, Arial, Helvetica, sans-serif;
+					font-size:99px;
+					height:122px;
+					line-height:122px;
+					position:relative;
+					text-align:center;
+					text-transform:uppercase;
+				}
+					#cartoon-game-tout-desktop .cartoon-game-tout-game-banner>span{
+						background-image:url(../../../static/images/cartoon-game-tout/font-bg.png);
+						display:block;
+						height:100%;
+						position:absolute;
+						max-width:380px;
+						width:100%;
+					}
+				#cartoon-game-tout-desktop .cartoon-game-tout-info clearfix{
+					position:relative;
+				}
+					#cartoon-game-tout-desktop .cartoon-game-tout-icon{
+						float:left;
+						margin:-17px 0 0 -9px;
+						position:relative;
+					}
+					#cartoon-game-tout-desktop .cartoon-game-tout-link{
+						border-bottom:4px solid #000;
+						border-top:4px solid #000;
+						float:right;
+						font-family:cn-bold, Arial, Helvetica, sans-serif;
+						font-size:37.7px;
+						line-height:62px;
+						margin:17px 11px 0 0;
+						padding:0 11px;
+						text-transform:uppercase;
+					}
+}
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+		#cartoon-game-tout-mobile{
+			display:none;
+		}
+		#cartoon-game-tout-desktop{
+			display:none;
+		}
+		#cartoon-game-tout-tablet{
+			background-color:#fff;
+			width:100%;
+		}
+			#cartoon-game-tout-tablet .cartoon-game-tout-tablet-wrapper{
+				color:#000;
+				display:block;
+				padding:30px 2.5%;
+				margin:30px 0;
+				text-decoration:none;
+				text-transform:uppercase;
+			}
+				#cartoon-game-tout-tablet-text{
+					font-family:avenir-next-rounded-std-med, Arial, Helvetica, sans-serif;
+					font-size:40px;
+					width:100%
+				}
+					#cartoon-game-tout-tablet-text .cartoon-game-tout-icon{
+						background-color:#000;
+						margin-right:1.8%;
+						vertical-align:middle;
+						width:12%
+					}
+					#cartoon-game-tout-tablet-text-inner{
+						color:#ec008c;
+						font-family:cn-bold, Arial, Helvetica, sans-serif;
+					}
+}
+@media only screen and (min-width : 971px) and (max-width : 999px) {
+				#cartoon-game-tout-tablet-text{
+					font-size:38px;
+				}
+}
+@media only screen and (min-width : 921px) and (max-width : 970px) {
+				#cartoon-game-tout-tablet-text{
+					font-size:36px;
+				}
+}
+@media only screen and (min-width : 871px) and (max-width : 920px) {
+				#cartoon-game-tout-tablet-text{
+					font-size:34px;
+				}
+}
+@media only screen and (min-width : 821px) and (max-width : 870px) {
+				#cartoon-game-tout-tablet-text{
+					font-size:32px;
+				}
+}
+@media only screen and (min-width : 768px) and (max-width : 820px) {
+				#cartoon-game-tout-tablet-text{
+					font-size:30px;
+				}
+}
+@media only screen and (min-width:481px) and (max-width:767px) {
+		#cartoon-game-tout-desktop{
+			display:none;
+		}
+		#cartoon-game-tout-tablet{
+			display:none;
+		}
+		#cartoon-game-tout-mobile{
+			background-color:#000;
+			color:#fff;
+			margin-bottom:15px;
+		}
+			#cartoon-game-tout-mobile .cartoon-game-tout-mobile-wrapper{
+				color:inherit;
+				display:block;
+				font-family:avenir-next-rounded-std-med, Arial, Helvetica, sans-serif;
+				font-size:38px;
+				line-height:60px;
+				padding:20px 25px;
+				text-decoration:none;
+			}
+				#cartoon-game-tout-mobile .cartoon-game-tout-icon{
+					float:left;
+					font-size:85px;
+				}
+				#cartoon-game-tout-mobile .cartoon-game-tout-mobile-text{
+					color:#fff;
+					float:left;
+					margin-left:4%;
+					text-transform:uppercase;
+					font-size: 32px;
+				}
+				#cartoon-game-tout-mobile .cartoon-game-tout-mobile-arrow{
+					float:right;
+				}
+}
+@media only screen and (max-width:480px) {
+		#cartoon-game-tout-desktop{
+			display:none;
+		}
+		#cartoon-game-tout-mobile{
+			background-color:#000;
+			color:#fff;
+			margin-bottom:15px;
+		}
+			#cartoon-game-tout-mobile .cartoon-game-tout-mobile-wrapper{
+				color:inherit;
+				display:block;
+				font-family:avenir-next-rounded-std-med, Arial, Helvetica, sans-serif;
+				font-size:19px;
+				line-height:40px;
+				padding:10px 12.5px;
+				text-decoration:none;
+			}
+				#cartoon-game-tout-mobile .cartoon-game-tout-icon{
+					float:left;
+					font-size:45px;
+				}
+				#cartoon-game-tout-mobile .cartoon-game-tout-mobile-text{
+					color:#fff;
+					float:left;
+					margin-left:4%;
+					text-transform:uppercase;
+				}
+				#cartoon-game-tout-mobile .cartoon-game-tout-mobile-arrow{
+					float:right;
+					font-size:25px;
+				}
+}
+/* ========== Edn of cartoon-game-tout module ====================================================================== */
+/* ========== property-nav-container ====================================================================== */
+		#property-nav-container{
+			background-color:#acdd00;
+			margin:30px 0;
+			width:100%;
+		}
+			#property-nav-container .property-image{
+				float:left;
+				margin-left:22px;
+				margin-top:-2%;
+				max-height:173px;
+				width:44%;
+			}
+			#property-nav-container .property-navs{
+				float:right;
+				margin-top:1.5%;
+				width:49%;
+			}
+				#property-nav-container .property-navs a:hover{
+					background-color:#000;
+				}
+				#property-nav-container .property-navs-links{
+					background-color:#145100;
+					color:#fff;
+					float:left;
+					font-family:cn-bold, Arial, Helvetica, sans-serif;
+					font-size:20px;
+					height:45px;
+					margin:1.6% 1.7%;
+					line-height:45px;
+					padding:0 2% 0 3.5%;
+					text-decoration:none;
+					text-transform:uppercase;
+					width:39.7%;
+				}
+					#property-nav-container .property-navs a span.cn_symbols{
+						float:right;
+						font-size:20px;
+						vertical-align:middle;
+					}
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+			#property-nav-container .property-image{
+				vertical-align:middle;
+				min-width:350px;
+			}
+				#property-nav-container .property-navs-links{
+					height:auto;
+				}
+}
+@media only screen and (min-width:481px) and (max-width:767px) {
+			#property-nav-container .property-image{
+				margin:-20px 5% -1.55%;
+				max-height:230px;
+				width:90%;
+				
+			}
+			#property-nav-container .property-navs{
+				display:block;
+				float:none;
+				margin-top:0.4%;
+				padding:2%;
+				width:auto;
+			}
+				#property-nav-container .property-navs-links{
+					height:50px;
+					margin:1.6% 1.5%;
+					line-height:50px;
+					padding:0;
+					width:47%;
+				}
+					#property-nav-container .property-navs-text{
+						margin-left:15px;
+					}
+					#property-nav-container .property-navs-arrow{
+						float:right;
+						margin-right:13px;
+					}
+}
+@media only screen and (max-width:480px) {
+			#property-nav-container .property-image{
+				margin:-15px 5% -1.35%;
+				max-height:172px;
+				width:90%;
+			}
+			#property-nav-container .property-navs{
+				display:block;
+				float:none;
+				margin-top:0%;
+				padding:2%;
+				width:auto;
+			}
+				#property-nav-container .property-navs-links{
+					font-size:15.5px;
+					height:41px;
+					margin:1.6% 1.5%;
+					line-height:41px;
+					padding:0;
+					width:47%;
+				}
+					#property-nav-container .property-navs-text{
+						margin-left:7.5px;
+					}
+					#property-nav-container .property-navs-arrow{
+						float:right;
+						margin-right:6.5px;
+					}
+}
+@media screen and (min-width:481px) and (max-width:600px) {
+	.property-navs a{
+		font-size:23.25px;
+		height:61.5px;
+		line-height:61.5px;
+	}
+} 
+/* ========== End Of property-nav-container ====================================================================== */
+/* ========== nav-back-to-top-mobile module ====================================================================== */
+		#nav-back-to-top-mobile{
+			display:none;
+		}
+@media only screen and (max-width:767px) {
+		#nav-back-to-top-mobile{
+			display:block;
+		}
+		#nav-back-to-top{
+			margin:30px 0;
+		}
+			#nav-back-to-top>a{
+				display:block;
+				margin:0 auto;
+				max-width:520px;
+				width:92%;				
+			}
+				#nav-back-to-top>a>img{
+					border:none;
+					width:100%
+				}
+}
+/* ========== End of nav-back-to-top-mobile module ====================================================================== */
+/* ========== tve authentication modal ============================================================ */
+#auth-overlay {
+	display: none;
+	background: #000;
+	filter: alpha(opacity=70);
+	height: 100%;
+	left: 0;
+	opacity: 0.7;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 9800;	
+}
+#auth-overlay.active {
+	display: block;			
+}			
+#auth-login-wrapper {
+	display: none;		
+	position: fixed;
+	top: 40px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	z-index: 9900;	
+	background-color: rgba(0, 0, 0, 0.7);
+}
+#auth-login-wrapper.active {
+	display: block;			
+}		
+#auth-login {
+	background: #fff;
+	display: inline-block;
+	width: 800px;
+	height: 604px;
+	margin: 1em;
+	text-align: left;
+	position: relative;
+	vertical-align: middle;	
+	top: 73px;
+}
+#box1 {
+	display: none;			
+}
+#box1.active {
+	display: block;			
+}
+#box2 {
+	display: none;			
+}
+#box2.active {
+	display: block;			
+}
+
+#auth-login .auth-header {
+	padding: 20px 15px 15px 140px;
+}
+#auth-login #welcome-text {
+	display: none;
+	float: left;
+	font-family: avenir-next-rounded-std-med, arial, sans-serif;
+	font-size: 42px;
+	line-height: 42px;
+	margin-left: 160px;
+	text-transform: uppercase;
+}
+#auth-login #welcome-text.active {
+	display: block;
+}
+#auth-login #step-wrapper {
+	display: none;
+}
+#auth-login #step-wrapper.active {
+	display: block;
+}
+#auth-login #step1 {
+	background: url(/static/images/tve-auth/step1.png) 0 0 no-repeat;
+	float: left;
+	height: 43px;
+	margin-right: 20px;
+	width: 146px;
+}
+
+#auth-login #step1.active {
+	background: url(/static/images/tve-auth/step1-active.png) 0 0 no-repeat;
+	float: left;
+	height: 43px;
+	margin-right: 20px;
+	width: 146px;
+}
+
+#auth-login #step2 {
+	background: url(/static/images/tve-auth/step2.png) 0 0 no-repeat;
+	float: left;
+	height: 43px;
+	margin-right: 20px;
+	width: 152px;
+}
+#auth-login #step2.active {
+	background: url(/static/images/tve-auth/step2-active.png) 0 0 no-repeat;
+	float: left;
+	height: 43px;
+	margin-right: 20px;	
+	width: 152px;
+}
+
+#auth-login #step3 {
+	background: url(/static/images/tve-auth/step3.png) 0 0 no-repeat;
+	float: left;
+	height: 43px;
+	margin-right: 20px;	
+	width: 146px;
+}
+
+#auth-close {
+	background: url(/static/images/tve-auth/button-close.png) 0 0 no-repeat;
+	cursor: pointer;
+	float: right;
+	height: 44px;
+	margin: -2px 5px 0 0;
+	width: 48px;
+}
+#auth-close:hover {
+	background-position: 0 -44px;
+}
+#auth-login .auth-content {
+	background: #e5e5e5;
+	border-bottom: 1px solid #b2b2b2;
+	border-top: 1px solid #b2b2b2;
+	height: 455px;	
+}
+#auth-login .auth-hero {
+	background: url(/static/images/tve-auth/hero.png) no-repeat;
+	float: left;
+	height: 327px;
+	margin: 80px 30px 0 36px;
+	width: 373px;
+}
+#auth-login .auth-text {
+	float: left;
+	padding-top: 130px;
+	width: 316px;
+}
+#auth-login .auth-text-primary {
+	color: #000;
+	font-family: cn-bold, arial, helvetica, sans-serif;
+	font-size: 32px;	
+	text-transform: uppercase;	
+	
+}
+#auth-login .auth-text-secondary {
+	color: #000;
+	font-family: cn-bold, arial, helvetica, sans-serif;
+	font-size: 26px;		
+	text-transform: uppercase;	
+}
+#auth-login .auth-text-secondary-color {
+	color: #ec008c;
+	font-family: cn-bold, arial, helvetica, sans-serif;
+	font-size: 24px;		
+	text-transform: uppercase;	
+}
+#auth-login .auth-text p {
+	font: normal 15px/18px arial, sans-serif;
+	margin: 14px 28px 16px 0;
+}
+#auth-login #auth-button {
+	background-color: #000;
+	border-radius: 34px;
+	cursor: pointer;
+	float: left;
+	padding: 10px 32px;
+}
+#auth-login #auth-button span {
+	background: url(/static/images/tve-auth/arrow.png) right center no-repeat;
+	color: #fff;
+	display: inline-block;
+	font-family: "cn-bold", arial, helvetica, sans-serif;
+	font-size: 32px;	
+	padding-right: 24px;
+	text-transform: uppercase;		
+}
+#auth-login #auth-button:hover {
+	background: #ec008c;
+}
+
+#auth-login .auth-picker {
+	background: url(/static/images/tve-auth/picker-bg.png) 0 0;
+	border-bottom: 1px solid #b2b2b2;
+	border-top: 1px solid #b2b2b2;
+	height: 495px;
+	overflow: hidden;
+	
+}
+#auth-login .auth-picker h2 {
+	color: #000;
+	font-family: cn-bold, arial, helvetica, sans-serif;
+	font-size: 42px;	
+	line-height: 86px;
+	text-align: center;
+	text-transform: uppercase;		
+}
+#auth-login .auth-picker h2 span {
+	background: url(/static/images/tve-auth/arrow-bent.png) right center no-repeat;
+	padding-right: 60px;
+}
+#auth-login .auth-picker-item {
+	-moz-box-shadow: 1px 1px 4px #8c8c8c;
+	-webkit-box-shadow: 1px 1px 4px 4px #8c8c8c;
+	box-shadow: 1px 1px 4px #8c8c8c;
+	border-radius: 7px;
+	cursor: pointer;	
+	margin: 0 0 24px 24px;
+	position: relative;
+	float: left;	
+	height: 99px;
+	width: 234px;
+}
+#auth-login .auth-help {
+	margin: 0 auto;
+	width: 100%;
+}
+#auth-login .auth-help-text {
+	float: left;
+	font: bold 16px arial, helvetica, sans-serif;
+	line-height: 60px;		
+}
+#auth-login #auth-help-close-button {
+	float: left;
+}
+#auth-login #auth-back-button {
+	float: left;
+}
+#auth-login #auth-list-button {
+	float: left;
+	margin-left: 180px;
+}
+#auth-login #auth-help-button {
+	float: right;
+}
+#auth-login .auth-secondary-button {
+	border: 1px solid #000;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-khtml-border-radius: 2px;
+	border-radius: 2px;	
+	color: #000;
+	cursor: pointer;
+	font-family: avenir-next-rounded-std-med, arial, sans-serif;
+	font-size: 18px;	
+	line-height: 26px;	
+	height: 26px;
+	margin: 16px 14px 0 14px;
+	padding: 0 16px;	
+	text-align: center;
+	text-transform: uppercase;
+}
+#auth-login .auth-secondary-button:hover {
+	border: 1px solid #ec008c;
+	background-color: #ec008c;
+	color: #fff;
+}
+#auth-help-overlay {
+	background: #fff;
+	display: none;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+#auth-help-overlay.active {
+	display: block;
+}
+.auth-help-header {
+	/*border-bottom: 1px solid #b2b2b2;*/
+	color: #000;
+	padding: 20px 15px 15px 48px;	
+}
+
+.auth-help-header h2 {	
+	display: inline-block;
+	float: left;
+	font-family: avenir-next-rounded-std-med, arial, sans-serif;
+	font-size: 38px;	
+	line-height: 48px;		
+	text-align: center;
+	text-transform: uppercase;	
+	width: 90%;
+}
+#auth-help-close{
+	background: url(/static/images/tve-auth/button-close.png) 0 0 no-repeat;
+	cursor: pointer;
+	float: right;
+	height: 44px;
+	width: 48px;
+}
+#auth-help-close:hover {
+	background-position: 0 -44px;
+}
+.auth-help-content {
+	border-bottom: 1px solid #b2b2b2;
+	border-top: 1px solid #b2b2b2;
+	height: 432px;
+	height: calc(100% - 190px);
+	overflow: auto;	
+	padding: 40px 36px 10px 36px;
+}
+
+.auth-help-content a {
+	color: #000;
+	text-decoration: underline;
+}
+
+.auth-help-content a:hover {
+	color: #ed0080;	
+}
+.auth-help-content h3 {
+	font-family: cn-bold, arial, helvetica, sans-serif;
+	font-size: 22px;
+	margin-bottom: 4px;		
+}
+.auth-help-content p {
+	font: normal 15px arial, helvetica, sans-serif;
+	margin-bottom: 30px;	
+}
+.auth-help-footer {
+	height: 62px;
+}
+
+/* --- MVPD Picker Override --- */
+#AccessEnabler {
+	bottom: 0;
+	position: absolute;
+	left: 0;
+}
+
+#mvpdPickerFrame {
+	position: fixed;
+}
+#mvpdpicker {
+	background: url(/static/images/tve-auth/picker-bg.png) 0 0;
+	height: auto;
+	margin-top: 50px;	
+}
+#mvpdpicker .header {
+	height: auto;
+	position: static;
+}
+#mvpdpicker .title {
+	background: url(/static/images/tve-auth/steps-titlediv.png) center center no-repeat #fff;
+	height: 76px;
+}
+#mvpdpicker .close {
+	background: url(/static/images/tve-auth/button-close.png) 0 0 no-repeat;
+	cursor: pointer;
+	height: 44px;
+	margin: 16px 20px;
+	width: 48px;
+}
+#mvpdpicker .close:hover {
+	background-position: 0 -44px;
+}
+#mvpdpicker.state-mvpdlogo .steps, #mvpdpicker.state-mvpdlist .steps {
+	background: url(/static/images/tve-auth/pickprovider-stepsdiv.png) center bottom no-repeat;
+	height: 70px;
+	width: 800px;
+}
+#mvpdpicker.state-mvpdlogo .slates, #mvpdpicker.state-mvpdlist .slates, #mvpdpicker .slates {
+	background-image: none;
+	background: none;
+}
+#mvpdpicker .slate {
+	height: auto;
+}
+#mvpdpicker .mvpdsbylogo {
+	height: auto;
+}
+#mvpdpicker.state-mvpdlogo .slates {
+	background: url(/static/images/tve-auth/footer-legal.png) 0 bottom no-repeat;
+	padding-bottom: 30px;
+}
+#mvpdpicker.state-mvpdlogo .slates .viewallbutton {
+	background: url(/static/images/tve-auth/button-viewallproviders.png) 0 0 no-repeat;
+	height: 28px;
+	margin-top: 44px;
+	width: 256px;
+}
+#mvpdpicker.state-mvpdlogo .slates .viewallbutton:hover {
+	background-position: 0 -28px;
+}
+#mvpdpicker .help {
+	background: url(/static/images/tve-auth/button-help.png) 0 0 no-repeat;	
+	top: 25px;
+	height: 28px;
+	position: absolute;	
+	right: 10px;
+	width: 83px;
+	z-index: 1;
+}
+#mvpdpicker .help:hover {
+	background-position: 0 -28px;
+}
+
+/* MVPD List of Providers */
+#mvpdpicker .searchfield {
+	background: url(/static/images/tve-auth/icon-search.png) 6px center no-repeat #fff;
+	border: 1px solid #555;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	box-shadow: none;
+}
+#mvpdpicker .mvpdsearch {
+	background: #fff;
+	color: #a3a3a3;
+	font-family: avenir-next-rounded-std-med, arial, sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	margin: 8px 0 0 36px;
+	text-transform: uppercase;	
+}
+
+#mvpdpicker .searchpane {
+	border: 2px solid #707070;
+}
+#mvpdpicker .mvpdsbyname li {
+	color: #000;
+	font: normal 15px/30px arial, helvetica, sans-serif;
+}	
+#mvpdpicker .mvpdsbyname li:hover {
+	color: #ed0080;	
+}
+
+#mvpdpicker .mvpdsbyname li:nth-child(odd) {
+	background-color:#f2f2f2;
+}
+#mvpdpicker .mvpdsbyname li:nth-child(even) {
+	background-color:#fff;
+}
+#mvpdpicker .searchfooter {
+	background: url(/static/images/tve-auth/footer.png) 0 bottom no-repeat;
+}
+#mvpdpicker .viewtopbutton {
+	background: url(/static/images/tve-auth/button-back.png) 0 0 no-repeat;
+	bottom: 16px;
+	height: 28px;
+	left: 10px;		
+	margin: 0;
+	position: absolute;
+	width: 83px;
+}
+#mvpdpicker .viewtopbutton:hover {
+	background-position: 0 -28px;
+}
+#mvpdpicker .dontseebutton {
+	background: url(/static/images/tve-auth/button-dontseeprovider.png) 0 0 no-repeat;
+	height: 28px;
+	margin: 36px 0 0 0;
+	width: 286px;
+}
+#mvpdpicker .dontseebutton:hover {
+	background-position: 0 -28px;
+}
+
+#mvpdpicker.state-notfound .title {
+	background: none;
+	background-image: none;
+}
+#mvpdpicker.state-notfound .steps {
+	background: none;
+	background-image: none;
+}
+#mvpdpicker.state-notfound {
+	background: url(https://z.cdn.turner.com/xslo/cvp/config/cn/tve/CartoonNetwork_slate_noprovider.png) 0 0 no-repeat;
+}	
+#mvpdpicker.state-notfound .slates {
+	background: url(/static/images/tve-auth/footer.png) 0 bottom no-repeat;
+	height: 400px;
+	position: relative;	
+}
+#mvpdpicker .noprovider {
+	height: 400px;
+}
+
+#mvpdpicker .noproviderokbutton {
+	background: url(/static/images/tve-auth/button-back.png) 0 0 no-repeat;
+	bottom: 12px;
+	height: 28px;
+	left: 10px;		
+	margin: 0;
+	position: absolute;
+	top: auto;
+	width: 83px;	
+}
+#mvpdpicker .noproviderokbutton:hover {
+	background-position: 0 -28px;
+}
+#auth-help-close-button {
+	background: url(/static/images/tve-auth/button-back.png) 0 0 no-repeat;
+	bottom: 12px;
+	height: 28px;
+	left: 10px;		
+	margin: 0;
+	position: absolute;
+	width: 83px;
+}
+#auth-help-close-button:hover {
+	background-position: 0 -28px;
+}
+
+#mvpdpicker .mvpdsbylogo li img.mvpdlogo {
+	-moz-box-shadow: 1px 1px 4px #8c8c8c;
+	-webkit-box-shadow: 1px 1px 4px 4px #8c8c8c;
+	box-shadow: 1px 1px 4px #8c8c8c;
+	border-radius: 7px;
+	cursor: pointer;	
+	margin: 0 0 24px 24px;
+	position: relative;
+	float: left;	
+	height: 99px;
+	width: 234px;	
+}
+
+#mvpdpicker .footer {
+	position: static;
+}	
+
+/* --- Authorization failure --- */
+#auth-login .auth-fail-header {
+	padding: 20px 15px 15px 48px;
+}
+
+#auth-login .auth-fail-header h2 {	
+	display: inline-block;
+	float: left;
+	font-family: avenir-next-rounded-std-med, arial, sans-serif;
+	font-size: 38px;	
+	line-height: 48px;		
+	text-align: center;
+	text-transform: uppercase;	
+	width: 90%;
+}
+
+#auth-login .auth-fail-content {
+	border-bottom: 1px solid #b2b2b2;
+	border-top: 1px solid #b2b2b2;
+	padding: 60px;
+}
+
+#auth-login .auth-fail-hero {
+	background: url(/static/images/tve-auth/hero-fail.png) center center no-repeat;
+	height: 187px;
+	width: 350px;
+	margin: 0 auto;
+}
+
+#auth-login .auth-fail-text {
+	font: bold 20px arial, helvetica, sans-serif;
+	margin: 10px auto 40px;
+	text-align: center;
+	width: 75%;
+}
+#auth-login .auth-fail-text-secondary {
+	font: normal 18px arial, helvetica, sans-serif;
+	margin-bottom: 5px;
+	text-align: center;
+}
+#auth-login #error-logout-wrapper {
+	margin: 0 auto 5px;
+	width: 200px;
+}
+#auth-login #error-logout {
+	background-color: #000;
+	border-radius: 34px;
+	cursor: pointer;
+	float: left;
+	padding: 10px 32px;
+}
+#auth-login #error-logout span {
+	color: #fff;
+	display: inline-block;
+	font-family: "cn-bold", arial, helvetica, sans-serif;
+	font-size: 24px;	
+	text-transform: uppercase;		
+}
+#auth-login #error-logout:hover {
+	background: #ec008c;
+}
+
+#auth-login #auth-help-button.auth-help-fail {
+	float: right;
+	margin-right: 20px;
+}
+
+
+/* ========== Global Nav ====================================================================== */
+/* first is the desktop CSS (not in a media query for IE8) */
+
+#ad-container-desktop {
+	background-color: black;
+	border: 1px black solid;
+	display: none;
+	margin: 11px auto 21px;
+	width: 744px;
+}
+#ad-slot-desktop {
+	float: left;
+	line-height: 0;
+	padding-right: 16px;
+}
+#ad-container-mobile {
+	background-color: black;
+	border: 1px black solid;
+	height: 65px;
+	line-height: 0;
+	margin: 10px auto;
+	width: 320px;
+}
+#ad-slot-mobile {
+	float: left;
+	width: 300px;
+}
+#ad-tab-mobile {
+	height: 15px;
+	text-align: center;
+	width: 100%;
+}
+#ad-tab-text {
+	color: white;
+	font: 9px/15px Arial, sans-serif;
+}
+
+.global-sprite {
+	background: url("../../static/images/global/desktop-nav.png") no-repeat;
+}
+#global-nav .nav-animated {
+	background: url("../../static/images/global/animated-icons.gif") no-repeat;
+	display: inline-block;
+}
+#global-nav {
+	background-color: white;
+	max-width: 980px;
+	margin: 21px auto 0;
+	width: 100%;
+}
+#global-nav #cn-logo {
+	background-position: -1px -1px;
+	height: 65px;
+	margin: 18px 23px 0px 25px;
+	width: 288px;
+}
+#global-nav #cn-logo,
+#global-nav .nav-button {
+	cursor: pointer;
+	display: block;
+	float: left;
+}
+#global-nav .nav-button {
+	height: 100px;
+}
+#global-nav .nav-button,
+#global-nav #show-picker-wrapper * {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+#global-nav .shows-divider.hidden {
+	visibility: hidden;
+}
+#global-nav #shows-button {
+	width: 250px;
+}
+#global-nav #shows-button.menu-active {
+	background-color: #323232;
+}
+#global-nav #unlocked-button {
+	width: 250px;
+}
+#global-nav #menu-button {
+	display: none;
+}
+#global-nav #login-container {
+	text-align: center;
+	width: 133px;
+}
+#global-nav #login-button {
+	background-color: black;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	display: inline-block;
+	color: white;
+	font: 15px/38px "cn-bold", "Trebuchet MS", sans-serif;
+	margin: 32px auto 0;
+	padding: 0 10px;
+	text-transform: uppercase;
+}
+#global-nav #login-button:hover {
+	background-color: #ec008c;
+}
+#global-nav #login-button.loading, 
+#global-nav #login-button.loading:hover {
+	background: none;
+	cursor: default;
+	line-height: 0;		
+}	
+#global-nav #login-container .login-loader-wrapper {
+	background-color: black;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	display: inline-block;
+	color: white;		
+}
+#global-nav .nav-button-title {
+	height: 26px;
+	margin: 0 auto;
+	width: 100%;
+	display: inline-block;
+}
+#global-nav .divider-desktop {
+	background-color: #999;
+	float: left;
+	height: 58px;
+	margin-top: 23px;
+	width: 1px;
+}
+#global-nav .divider-mobile {
+	display: none;
+}
+#global-nav #shows-animated {
+	background-position: 0 -45px;
+	height: 30px;
+	margin: 37px 0px 8px 43px;
+	width: 44px;
+}
+#global-nav #unlocked-animated {
+	background-position: -90px -45px;
+	height: 32px;
+	margin: 36px 0px 8px 40px;
+	width: 32px;
+}
+#global-nav #shows-button.menu-active #shows-animated,
+#global-nav #shows-button.menu-active:hover #shows-animated {
+	background: url("../../static/images/global/desktop-nav.png") -3px -250px no-repeat;
+}
+#global-nav #shows-button:hover #shows-animated {
+	background-position: 0 -6px;
+}
+#global-nav #unlocked-button:hover #unlocked-animated {
+	background-position: -51px -45px;
+}
+#global-nav .nav-button-title {
+	width: 55%;
+}
+#global-nav #shows-title {
+	background-position: center -160px;
+	position: relative;
+	top: -10px;    
+}
+#global-nav #unlocked-title {
+	background-position: center -100px;
+	position: relative;
+	top: -10px;
+}
+#global-nav .nav-button:hover > .nav-button-title {
+	background-color: black;
+}
+#global-nav #shows-button:hover #shows-title,
+#global-nav #shows-button.menu-active #shows-title {
+	background-position: center -130px;
+}
+#global-nav #unlocked-button:hover #unlocked-title  {
+	background-position: center -70px;
+}
+#global-nav #shows-button.menu-active:hover #shows-title {
+	background-color: #323232;
+}
+#global-nav #shows-tray, 
+#global-nav #menu-tray {
+	background-color: #323232;
+	-webkit-box-shadow: inset 0 0 10px 6px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow:    inset 0 0 10px 6px rgba(0, 0, 0, 0.2);
+	box-shadow: 		inset 0 0 10px 6px rgba(0, 0, 0, 0.2);
+	clear: both;
+	display: none;
+	overflow: hidden;
+}
+#global-nav #shows-tray {
+	padding-top: 20px;
+}
+#global-nav #show-picker-wrapper,
+#global-nav #search-results { 
+	margin: 0px auto 14px;
+	position: relative;
+}
+#global-nav #show-picker {
+	margin: 0 auto;
+	max-height: 252px;
+	overflow: hidden;
+	position: relative;
+}
+#global-nav #show-picker .showLink {
+	display: block;
+	width: 72px;
+	height: 72px;
+	margin: 6px;
+}
+#global-nav #show-picker .showLink,
+#global-nav #search-results .result-item-image {
+	-webkit-box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.35);
+	-moz-box-shadow:    1px 1px 0px rgba(0, 0, 0, 0.35);
+	box-shadow:         1px 1px 0px rgba(0, 0, 0, 0.35);
+	float: left;
+}
+#global-nav #show-picker img {
+	width: 100%;
+}
+#global-nav #status-bar {
+	clear: both;
+	cursor: pointer;
+	margin: 0 auto;
+	text-align: center;
+}
+#global-nav #status-bar .indicator {
+	background-color: #999;
+	cursor: pointer;
+	display: inline-block;
+	height: 14px;
+	margin: 0 7px;
+	width: 14px;
+}
+#global-nav #status-bar .active {
+	background-color: #FBFBFB;
+	height: 18px;
+	margin: -2px 7px;
+	width: 18px;
+}
+#global-nav #search-results {
+	background-color: #323232;
+	display: none;
+	height: 185px;
+	overflow: hidden;
+	text-align: center;
+	width: 93%;
+}
+#global-nav #results-list {
+	display: table;
+	margin: 0 auto;
+}
+#global-nav #search-results .result-item {
+	display: inline-block;
+	margin: 12px 15px;
+}
+#global-nav #search-results .result-item a {
+	display: block;
+	float: left;
+}
+#global-nav #search-results .result-item-title {
+	color: #b4b4b4;
+	float: left;
+	font: 18px Arial, sans-serif;
+	margin-left: 15px;
+	padding-top: 5px;
+	text-align: left;
+	width: 225px;
+}
+#global-nav  .search-copy {
+	display: none;
+	color: #b4b4b4;
+	font: 18px Arial, sans-serif;
+	margin: 92px auto 0;
+}
+#global-nav #double-border {
+	width: 100%;
+	border-top: 1px #474747 solid;
+	border-bottom: 1px black solid;
+}
+#global-nav #search-wrapper {
+	width: 100%;
+	padding: 18px 0 24px;
+}
+#global-nav #search-field {
+	background-color: #232323;
+	border: 2px #4c4c4c solid;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	-webkit-box-shadow: inset 0 0 7px 3px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow:    inset 0 0 7px 3px rgba(0, 0, 0, 0.2);
+	box-shadow: 		inset 0 0 7px 3px rgba(0, 0, 0, 0.2);
+	height: 45px;
+	margin: 0 auto;
+	max-width: 590px;
+	padding: 0 15px;
+	width: 75%;
+}
+#global-nav #search-input {
+	background: none;
+	border: none;
+	color: #616161;
+	float: left;
+	font: 20px Arial, sans-serif;
+	height: 100%;
+	outline: none;
+	padding: 0;
+	width: 87%;
+}
+#global-nav #search-icon {
+	background-position: -173px -253px;
+	cursor: pointer;
+	float: right;
+	height: 29px;
+	margin-top: 8px;
+	width: 29px;
+}
+#global-nav #search-icon.active{
+	background-position: -111px -253px;
+}
+#global-nav #search-icon.active:hover {
+	background-position: -142px -253px;
+}
+#global-nav #tooltip {
+	background-color: #ec008c;
+	color: white;
+	cursor: default;
+	display:none;
+	font: normal 16px/18px 'cn-bold', Trebuchet MS, sans-serif;
+	max-width: 180px;
+	min-width: 80px;
+	padding: 7px 10px;
+	position: absolute;
+	text-align: center;
+	text-transform: uppercase;
+	z-index: 10000;
+}
+#global-nav #tooltip #up-arrow {
+	background-position: -92px -272px;
+	height: 9px;
+	left: 50%;
+	margin-left: -8px;
+	position: absolute;
+	top: -9px;
+	width: 16px;
+}
+
+/* ========== mobile version (global nav) ====================================================================== */
+
+@media only screen and (max-width : 589px) {
+
+	body {
+		min-height: 540px;
+	}
+
+	#global-nav .picker-arrow,
+	#hat_wrapper,
+	#global-nav .divider-desktop,
+	#global-nav #login-container,
+	#global-nav .nav-button-title,
+	#global-nav .nav-animated, 
+	#global-nav #shows-animated,
+	#global-nav #unlocked-button {
+		display: none;
+	}
+
+	#global-nav {
+		-webkit-box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.55);
+		-moz-box-shadow:    1px 4px 8px rgba(0, 0, 0, 0.55);
+		box-shadow:         1px 4px 8px rgba(0, 0, 0, 0.55);
+		margin: 0 auto;
+		position: relative;
+		z-index: 1;
+	}
+	.global-sprite {
+		background: url("../../static/images/global/phone-nav.png") no-repeat;
+		background-size: 233px 103px;
+	}
+	#global-nav #cn-logo {
+		background-position: 0px 0px;
+		float: left;
+		height: 30px;
+		margin: 15px 12px 0px;
+		width: 145px;
+	}
+	#global-nav #float-container {
+		float: right;
+		height: 58px;
+	}
+	#global-nav .divider-mobile {
+		background-color: #999;
+		display: block;
+		float: left;
+		height: 100%;
+		width: 2px;
+	}
+	#global-nav .nav-button {
+		height: auto;
+	}
+	#global-nav #shows-button {
+		height: 100%;
+		padding: 0px 16px;
+		position: relative;
+		width: auto;
+	}
+	#global-nav #shows-title {
+		background-position: -204px 0px;
+		display: block;
+		height: 19px;
+		margin-top: 20px;
+		width: 63px;
+		top: 0;
+		background-size: 326px 144px;
+	}
+	#global-nav #shows-button:hover #shows-title, 
+	#global-nav #shows-button.menu-active #shows-title {
+		background-position: -204px 0px;
+	}
+	#global-nav #shows-button:hover #shows-title {
+		background-color: white;
+	}
+	#global-nav #menu-button {
+		display: inline-block;
+		height: 100%;
+		padding: 0px 13px;
+		position: relative;
+	}
+	#global-nav #menu-image {
+		background-position: -150px -14px;
+		height: 22px;
+		margin-top: 19px;
+		width: 28px;
+	}
+	#global-nav #menu-button.menu-active, 
+	#global-nav #shows-button.menu-active,
+	#global-nav #menu-button.menu-active #menu-image,
+	#global-nav #shows-button.menu-active:hover #shows-title {
+		background-color: #e3e3e3;
+	}
+	#global-nav #menu-button.menu-active #menu-image {
+		background-position: -180px -14px;
+	}
+	#global-nav #menu-button.menu-active .down-arrow, 
+	#global-nav #shows-button.menu-active .down-arrow {
+		display: block;
+	}
+	#global-nav .down-arrow {
+		background-position: -3px -31px;
+		bottom: -6px;
+		display: none;
+		height: 6px;
+		left: 50%;
+		margin-left: -8px;
+		position: absolute;
+		width: 16px;
+	}
+	#global-nav #shows-tray {
+		padding-top: 10px;
+	}
+	#global-nav #show-picker .showLink {
+		width: 60px;
+		height: 60px;
+		margin: 4px;
+	}
+	#global-nav #status-bar {
+		margin-top: 12px;
+	}
+	#global-nav #status-bar .indicator {
+		height: 8px;
+		margin: 0 6px;
+		width: 8px;
+	}
+	#global-nav #status-bar .active {
+		height: 11px;
+		margin: -1.5px 6px;
+		width: 11px;
+	}
+	#global-nav #search-results {
+		height: 121px;
+		margin-bottom: 10px;
+		max-width: 350px;
+	}
+	#global-nav #search-results .result-item {
+		margin: 7px 6px;
+		max-height: 48px;
+		overflow: hidden;
+	}
+	#global-nav #search-results .result-item-image {
+		height: 47px;
+		width: 47px;
+	}
+	#global-nav #search-results .result-item-title {
+		font-size: 11px;
+		margin-left: 8px;
+		padding-top: 3px;
+		width: 81px;
+	}
+	#global-nav .search-copy {
+		margin-top: 45px;
+	}
+	#global-nav #search-wrapper {
+		padding: 10px 0 12px;
+	}
+	#global-nav #search-field {
+		height: 40px;
+	}
+	#global-nav #search-input {
+		font-size: 16px;
+		width: 80%;	
+	}
+	#global-nav #search-icon {		
+		background-position: -206px -26px;
+		margin-top: 5px;
+	}
+	#global-nav #search-icon.active,
+	#global-nav #search-icon.active:hover {
+		background-position: -206px 1px;
+	}
+	#global-nav #tooltip {
+		display: none !important;
+	}
+	#global-nav #menu-tray {
+		height: 115px;
+		text-align: center;
+	}
+	#global-nav #menu-tray .menu-button-mobile {
+		display: inline-block;
+		text-align: center;
+		width: 47%;
+	}
+	#global-nav #menu-tray .menu-icons {
+		display: inline-block;
+		height: 66px;
+		margin-top: 23px;
+	}
+	#global-nav #menu-tray #unlocked-button-mobile {
+		background-position: -52px -39px;
+		width: 90px;
+	}
+	#global-nav #menu-tray #apps {
+		background-position: -143px -39px;
+		width: 45px;
+		margin: 0 22px;
+	}
+	#global-nav #menu-tray .divider-mobile {
+		background-color: #999;
+		float: none;
+		display: inline-block;
+		height: 58px;
+		margin-top: 23px;
+		width: 1px;
+	}      
+}
+
+/* this media query is to remove the left and right borders so the ad will fit on iPhones */
+@media only screen and (max-width : 320px) {
+	#ad-container-mobile {
+		border-left: none;
+		border-right: none;
+	}
+}
+
+
+
+/* ========== tablet portrait version (global nav) ====================================================================== */
+
+@media only screen and (min-width : 590px) and (max-width : 768px) {
+	#global-nav #login-container,
+	#global-nav #last-divider-mobile,
+	#global-nav .nav-animated,
+	#global-nav .picker-arrow {
+		display: none;
+	}
+	#ad-tab-text-image {
+		background-position: -262px -322px;
+	}
+	#global-nav {
+		-webkit-box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.55);
+		-moz-box-shadow:    1px 4px 8px rgba(0, 0, 0, 0.55);
+		box-shadow:         1px 4px 8px rgba(0, 0, 0, 0.55);
+		margin: 0 auto;
+		z-index: 1;
+	}
+	#global-nav #cn-logo-wrapper {
+		float: left;
+		width: 26%;
+	}
+	#global-nav #float-container {
+		height: 58px;
+		width: 36%;
+	}
+	#global-nav #unlocked-button {
+		width: 36%;
+	}
+	#global-nav #cn-logo {
+		background-position: -1px -146px;
+		background-size: 145px 175px;
+		float: none;
+		height: 30px;
+		margin: 15px auto 0px;
+		width: 133px;
+	}
+	#global-nav .divider-desktop {
+		margin-top: 0;
+	}
+	#global-nav .nav-button {
+		height: 100%;
+	}
+	#global-nav #shows-button {
+		width: 100%;
+	}
+	#global-nav #shows-animated {
+		display:none;
+	}        
+	#global-nav #shows-title {
+		display: inline-block;
+		width: 100%;
+		margin-top: 17px;
+		position: inherit;
+	}
+	#global-nav #unlocked-button {
+		display: inline-block;
+	}
+	#global-nav #unlocked-animated {
+		display:none;
+	}        
+	#global-nav #unlocked-title {
+		display: inline-block;
+		width: 100%;
+		margin: auto;
+		margin-top: 17px;
+		position: inherit;
+	}    
+	#global-nav .nav-button:hover .nav-button-title {
+		background-color: white;
+	}
+	#global-nav #shows-button.menu-active #shows-title,
+	#global-nav #shows-button.menu-active:hover #shows-title {
+		background-position: center -130px;
+	}
+	#global-nav #shows-button:hover #shows-title {
+		background-position: center -160px;
+	}
+	#global-nav #unlocked-button:hover #unlocked-title  {
+		background-position: center -100px;
+	}
+	#global-nav #shows-tray {
+		padding-top: 10px;
+	}
+	#global-nav #show-picker .showLink {
+		width: 60px;
+		height: 60px;
+		margin: 4px;
+	}
+	#global-nav #status-bar {
+		margin-top: 20px;
+	}
+	#global-nav #status-bar .indicator {
+		height: 12px;
+		margin: 0 8px;
+		width: 12px;
+	}
+	#global-nav #status-bar .active {
+		height: 15px;
+		margin: -1.5px 7px;
+		width: 15px;
+	}
+	#global-nav #search-results {
+		height: 155px;
+		margin-bottom: 15px;
+	}
+	#global-nav #search-results .result-item {
+		margin: 10px;
+	}
+	#global-nav #search-results .result-item-image {
+		height: 60px;
+		width: 60px;
+	}
+	#global-nav #search-results .result-item-title {
+		font-size: 16px;
+		margin-left: 10px;
+		width: 160px;
+	}
+	#global-nav .search-copy {
+		margin-top: 77px;
+	}
+	#global-nav #search-wrapper {
+		padding: 12px 0 16px;
+	}
+	#global-nav #search-field {
+		height: 40px;
+	}
+	#global-nav #search-icon {		
+		margin-top: 5px;
+	}
+	#global-nav #tooltip {
+		display:none !important;
+	}
+}
+
+
+/* ========== tablet landscape version (global nav) ====================================================================== */
+
+@media only screen and (min-width : 769px) and (max-width : 1024px) {
+	#global-nav #login-container,
+	#global-nav #last-divider-mobile,
+	#global-nav .picker-arrow  {
+		display: none;
+	}
+	#ad-tab-text-image {
+		background-position: -262px -322px;
+	}
+	#global-nav {
+		margin: 0 auto;
+	}
+	#global-nav #cn-logo-wrapper {
+		float: left;
+		width: 39.5%;
+	}
+	#global-nav #float-container {
+		width: 30%;
+	}
+	#global-nav #float-container {
+		width: 30%;
+	}
+	#global-nav #cn-logo {
+		float: none;
+		margin: 18px auto 0px;
+	}
+	#global-nav #shows-button {
+		width: 100%;
+	}
+	#global-nav #shows-animated {
+		display: block;
+		margin: auto;
+		margin-top: 20px;
+	}        
+	#global-nav #shows-title {
+		display: block;
+		width: 130px;
+		position: inherit;
+		margin: auto;
+		margin-top: 5px;
+	}
+	#global-nav #unlocked-button {
+		display: inline-block;
+		width: 30%;
+	}
+	#global-nav #unlocked-animated {
+		display: block;
+		margin: auto;
+		margin-top: 20px;
+	}        
+	#global-nav #unlocked-title {
+		display: block;
+		width: 150px;
+		margin: auto;
+		margin-top: 5px;
+		position: inherit;
+	}      
+	#global-nav #shows-button.menu-active #shows-title {
+		background-position: center -130px;
+	}
+	#global-nav #show-picker {
+		margin: 0px auto 25px;
+	}
+	#global-nav #show-picker .showLink {
+		-webkit-box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.35);
+		-moz-box-shadow:    1px 1px 0px rgba(0, 0, 0, 0.35);
+		box-shadow:         1px 1px 0px rgba(0, 0, 0, 0.35);
+	}
+}
+
+/* using a separate media query for ad purposes */
+/* this is because we don't want the nav to be 100% width when the ad is placed above it (desktop ad) */
+@media only screen and (min-width : 986px) and (max-width : 1024px) {
+	#global-nav {
+		width: 95%;
+	}
+}
+
+
+/* ========== show-picker next/prev button CSS ========= */
+/* using a separate media query for this because we want it to be there on the 1024px version too */
+/* this MQ targets all screens bigger than 940px that aren't mobile devices*/
+
+@media only screen and (min-width : 940px) and (min-device-aspect-ratio: 1/1) {
+	#global-nav #show-picker-wrapper { 
+		width: 894px;
+	}
+	#global-nav #show-picker {
+		float: left;
+		margin: 0px 14px 25px;
+	}
+	#global-nav .picker-arrow {
+		background-color: #666;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		cursor: pointer;
+		display: block;
+		float: left;
+		height: 136px;
+		margin-top: 61px;
+		opacity: 0;
+		filter: alpha(opacity=0);
+		-webkit-transition: all 150ms ease-in-out;
+		-moz-transition: all 150ms ease-in-out;
+		-ms-transition: all 150ms ease-in-out;
+		-o-transition: all 150ms ease-in-out;
+		transition: all 150ms ease-in-out;
+		width: 55px;
+	}
+	#global-nav #show-picker-wrapper:hover .picker-arrow {
+		opacity: 1;
+		filter: alpha(opacity=100);
+	}
+	#global-nav .picker-arrow:hover {
+		background-color: #DEDEDE;
+	}
+	#global-nav .picker-arrow.inactive {
+		background-color: #272727;
+		cursor: default;
+		visibility: hidden;
+	}
+	#global-nav .picker-arrow .arrow-image {
+		background: url("../../static/images/global/desktop-nav.png") no-repeat;
+		background-position: -46px -248px;
+		height: 34px;
+		margin: 51px auto;
+		width: 21px;
+	}
+	#global-nav #next-arrow .arrow-image {
+		background-position: -68px -248px;
+	}	
+	#global-nav #show-picker img:hover {
+		border: 3px #ec008c solid;
+		margin-left: -3px;
+		margin-top: -3px;
+	}
+	#global-nav #search-results .result-item:hover .result-item-title {
+		color: white;
+	}
+}
+
+/* ========== end global nav ====================================================================== */
+
+/*--- required SwipeJS CSS ---*/
+#global-nav .swipe {
+	overflow: hidden;
+	visibility: hidden;
+	position: relative;
+}
+#global-nav .swipe-wrap {
+	overflow: hidden;
+	position: relative;
+}
+#global-nav .swipe-wrap .slide {
+	float: left;
+	width: 100%;
+	position: relative;
+}
+
+/*--- clear fix - keep as last item in file---*/
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+* html .clearfix {
+	zoom: 1;
+} /* IE6 */
+
+*:first-child+html .clearfix, *:first-child+html #_sb_alertContent {
+	zoom: 1;
+} /* IE7 */

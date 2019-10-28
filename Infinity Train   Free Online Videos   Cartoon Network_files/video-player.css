@@ -1,0 +1,1512 @@
+.rounded-corners {
+  -moz-border-radius: 5px; -webkit-border-radius: 5px; -khtml-border-radius: 5px; border-radius: 5px;
+}
+
+
+/* make the main content container consistent with all other pages */
+#main-content {
+    margin: 0 auto;
+    width: 980px;
+}
+@media only screen and (max-width : 1024px) {
+    #main-content {
+        width: 95%;
+    }
+}
+
+#player_wrapper {
+	background-color: black;
+	height: 0;
+	padding-bottom: 56.25%;
+	position: relative;
+	overflow: hidden;
+	clear:left;
+	box-shadow: 2px 0 8px 0 #333333;
+	-webkit-box-shadow: 2px 0 8px 0 #333333;
+	-moz-box-shadow: 2px 0 8px 0 #333333;
+}
+#cnTopPlayer {
+	position: absolute;
+	height: 100%;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 10;
+}
+#flash-notice {
+	background:#000;
+	color:#fff;
+	display: none;
+	font:bold 12px arial,helvetica,sans-serif;
+	padding:35px 0;
+	text-align:center;
+	width:100%;
+}
+
+/* overrides of global elements */
+#property-nav-container {
+	background-color: #acdd00;
+	margin: 0 0 30px 0;
+	width: 100%;
+}
+
+/* Default Desktop View: 1024+ */
+body{background-color:#289403;}
+
+#cn-videopage {
+	margin: 0 auto;
+	max-width: 980px;
+	position: relative;
+	width: 100%;
+}
+#cn-videopage-ad {			border:#000 solid 1px;  clear: both; float:left; width:100%; height:100px;}
+#cn-videopage-navinclude {	border:#000 solid 1px; background-color:#FFF; clear: both; float:left; width:100%; height:116px;}
+#cn-videopage-propertinfo {	border:#000 solid 1px; background-color:#145100; clear: both; float:left; width:100%; height:50px;}
+#cn-videopage-propertyname{font-family:Arial, Helvetica, sans-serif; margin-left:25px; margin-top:19px; font-weight:bold; font-size:20px; color:#FFF; float:left;}
+#cn-videopage-property-content{font-family:Arial, Helvetica, sans-serif; margin-top:19px; font-weight:bold; font-size:20px; color:#FFF; float:left;}
+#cn-videopage-property-content-pipe{font-family:Arial, Helvetica, sans-serif; margin-top:19px; margin-right:11px; margin-left:11px; font-weight:bold; font-size:20px; color:#acdd00; float:left;}
+
+
+/* page-title module --------------------------------------- */
+/* modules/page-title.jsp ---------------------------------- */
+
+#page-title {
+    color: white;
+    font: 20px/25px "avenir-next-rounded-std-med", Arial, sans-serif;
+    margin: 0 auto;
+    padding: 16px 0;
+    position: relative;
+    text-transform: uppercase;
+    -webkit-text-size-adjust: none;
+    width: 100%;
+}
+#page-title a {
+    color: white;
+}
+#page-title h1 {
+    margin: 0 25px;
+}
+#page-title #pipe {
+    /*color: #acdd00;*/
+    margin: 0 5px;
+    vertical-align: text-bottom;
+}
+@media only screen and (max-width : 767px) {
+    #page-title {
+        font: bold 11px/15px Arial, sans-serif;
+        padding: 8px 0;    
+    }
+	#page-title h1 {
+		margin: 0 14px;
+	}
+    #page-title #pipe {
+        display: inline-block;
+        margin: -1px 3px;
+    }
+}
+
+/* Preview: 2 Min Teaser ----------------------------------- */
+#cn-videopage-property-prewiew {
+	display: none;
+	float: right;
+	text-align: center;
+	margin-top: -50px;
+	width: auto;
+	padding-right: 20px;
+	box-shadow: none;
+}
+#cn-videopage-property-prewiew-copy{
+	background: #000000;
+	width: auto;
+	padding: 5px;
+	margin-top: 4px;
+	height: 22px;
+	font-weight: normal;
+	font-size: 20px;
+}
+#cn-videopage-property-prewiew-copy img{
+	padding: 0;
+	height: 100%;
+}
+
+/*--- Ad Label --------------------------------------------- */
+#ad-video-label {
+	background: #000;
+	color: #fff;
+	display: none;
+	font: normal 10px arial, helvetica, sans-serif;
+	padding: 6px 0;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	z-index: 11;
+}
+#ad-video-label .ad-video-label-title {
+	font-weight: bold;
+}
+#ad-video-label.active {
+	display: block;
+}
+
+/*--- Video Player --------------------------------------------- */
+#cn-videopage-videoplayer{
+	background-color:#FFF;
+	clear: both;
+	float:left;
+	width:100%;
+	height:344px;
+}
+#cn-videopage-videonavigation {
+	clear: both;
+	float: left;
+	width: 100%;
+	background-color: #fff;
+	margin-bottom: 30px;
+}
+
+/*--- Episode Info (rating,desc) -------------------------------- */
+#cn-videopage-epinfo-container {
+	float: left;
+	border: 10px solid #c1c1c1;
+	margin: 20px 0 20px 16px;
+	padding: 0 6px;
+	width: 28%;
+}
+#cn-videopage-epinfo-container.no-clips {
+	float: none;
+	width: 92%;
+	margin: 20px auto;
+}
+#cn-videopage-epinfo{
+	background-color: #FFF;
+	float: left;
+	padding: 10px 3%;
+}
+#cn-videopage-ep-season{
+	font: 16px 'cn-bold',arial,Helvetica,sans-serif;
+}
+#cn-videopage-ep-title{
+	font: 20px 'avenir-next-rounded-std-med',arial,Helvetica,sans-serif;
+	margin: 0 0 16px 0;
+}
+#cn-videopage-ep-rating{
+	border-right: 1px solid black;
+	clear:left;
+	height: 20px;
+	float:left;
+	margin: 0 0 20px 0;
+	width: 20px;
+	padding: 0 4px 0 0;
+}
+#cn-videopage-ep-rating img {
+	width: 100%;
+	height: 100%;
+}
+#cn-videopage-ep-airdate {
+	font-size: 13px;
+	float: left;
+	height: 22px;
+	line-height: 22px;
+	margin: 0 0 20px 0;
+	padding: 0 4px;
+}
+#cn-videopage-ep-comments {
+	display: none;
+	text-align:center;
+	padding-top:6px;
+	border-radius:7px;
+	float:left;
+	background-color:#000;
+	color:#FFF;
+	font-size:12px;
+	height:15px;
+	margin: 0 0 20px 8px; /*margin: 0 0 20px 8px; */
+	min-width: 43px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#cn-videopage-ep-description-btn{
+	display: none;
+	float:right;
+	height: 24px;
+	line-height: 24px;
+	margin: 0 0 20px 0;
+}
+#cn-videopage-ep-description-btn a{
+	font: bold 14px arial,helvetica,sans-serif;
+	text-decoration:none;
+	padding: 4px;
+	border: 1px solid black;
+	color:#000000;
+	width:auto;
+	height:auto;
+}
+#cn-videopage-ep-description-copy{
+	font-size: 14px;
+	float: left;
+	clear: both;
+	margin: 0;
+	padding: 0 0 15px 0;
+	line-height: 1.3;
+	width: 100%;
+/* low
+border: none; font-size: 14px; margin: 0;
+*/
+}
+
+#cn-videopage-ep-watchfullepisode {
+	border-radius:7px;
+	display:block;
+	clear:both;
+	background-color:#ec008c;
+	padding:10px;
+	cursor:pointer;
+}
+#cn-videopage-ep-watchfullepisode.watchingTVE .cn-videopage-ep-watchfullepisode-overlay {
+	display: inline;
+}
+#cn-videopage-ep-watchfullepisode:hover {
+	background: black;
+}
+#cn-videopage-ep-watchfullepisode.watchingTVE:hover {
+	background-color:#ec008c;
+}
+#cn-videopage-ep-watchfullepisode-img{
+	display: block;
+	float: left;
+	margin-top: 5px;
+	position: relative;
+	width:90px;
+}
+#cn-videopage-ep-watchfullepisode-img img{
+	background-color:#000;
+	border:1px solid #FFF;
+	width: 100%;
+}
+#cn-videopage-ep-watchfullepisode-link{
+	padding-left: 12px;
+	display: table-cell;
+	vertical-align: middle;
+	font-family:"cn-bold";
+	font-size: 20px;
+	color:#FFF;
+	text-decoration:none;
+	height: 62px;
+}
+
+/* HR */
+#cn-videopage-epinfo .hr {
+	display: none;
+	clear: both;
+	height: 1px;
+	margin-bottom: 20px;
+	border-top: 1px solid #c1c1c1;
+}
+
+/* Hover */
+#cn-videopage-ep-watchfullepisode .cn-videopage-ep-watchfullepisode-hover {
+	display: none;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	left: 50%;
+	top: 0;
+	margin: 5px 0 0 -25px;
+	background: transparent;
+	border: none;
+}
+#cn-videopage-ep-watchfullepisode #cn-videopage-ep-watchfullepisode-hover-black {
+	display: none;
+}
+#cn-videopage-ep-watchfullepisode:hover #cn-videopage-ep-watchfullepisode-hover-black {
+	background-color: rgba(0,0,0,0.4);
+	display: block;
+	height: 89.5%;
+	left: 1px;
+	position: absolute;
+	top: 1px;
+	width: 100%;
+}
+#cn-videopage-ep-watchfullepisode:hover .cn-videopage-ep-watchfullepisode-hover {
+	display: inline;
+}
+#cn-videopage-ep-watchfullepisode .cn-videopage-ep-watchfullepisode-overlay {
+	display: none;
+	width: 100%;
+	position: absolute;
+	left: 1px;
+	top: 1px;
+	background: transparent;
+	border: none;
+}
+
+
+/*--- Show more (clips) ----------------------------------- */
+#cn-videopage-videonavigation-collectionview #show-more-container {
+    background: url("../../../static/images/property-more/property-more-dot.png") repeat-x left top;
+	margin: 0 18px;
+    padding: 28px 0;
+}
+#cn-videopage-videonavigation-collectionview #show-more {
+    background-color: #fafafa;
+    border: 2px #bcbcbc solid;
+    color: #464646;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    cursor: pointer;
+    height: 66px;
+    margin: 0 auto;
+    text-align: center;
+    width: 90%;
+}
+#cn-videopage-videonavigation-collectionview #show-more:hover {
+    background-color: #737373;
+    color: white;
+    border-color: #737373;
+}
+#cn-videopage-videonavigation-collectionview #show-more-label {
+    font: 28px/66px "avenir-next-rounded-std-med", Arial, sans-serif;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+#cn-videopage-videonavigation-collectionview #show-more-image {    
+    background-position: -211px -271px;
+    display: inline-block;
+    height: 12px;
+    margin: 0 0 -2px 6px;
+    width: 20px;
+}
+#cn-videopage-videonavigation-collectionview #show-more:hover #show-more-image {
+    background-position: -211px -256px;
+}
+#cn-videopage-videonavigation-collectionview .cn-videopage-relatedinfo-entry-collectionview.hidden-clip {
+    display: none;
+}
+@media only screen and (max-width : 1024px) {   
+    #cn-videopage-videonavigation-collectionview  #show-more:hover {
+        background-color: #fafafa;
+        border-color: #bcbcbc;
+        color: #464646;
+    }
+    #cn-videopage-videonavigation-collectionview  #show-more:hover #show-more-image {
+        background-position: -211px -271px;
+    }
+}
+@media only screen and (max-width : 589px) {
+    #cn-videopage-videonavigation-collectionview #show-more-container {
+        padding: 14px 0;
+    }
+    #cn-videopage-videonavigation-collectionview #show-more {
+        border-width: 1px;
+        height: 45px;
+    }
+    #cn-videopage-videonavigation-collectionview #show-more-label {
+        font-size: 22px;
+        line-height: 45px;
+    }
+    #cn-videopage-videonavigation-collectionview #show-more-image {
+        margin: 0 0 -5px 4px;
+        width: 22px;
+    }
+    #cn-videopage-videonavigation-collectionview #show-more-image {
+        background-position: -200px -69px;
+    }
+    #cn-videopage-videonavigation-collectionview #show-more:hover #show-more-image {
+        background-position: -200px -69px;
+    }
+}
+
+/*--- Related Video (next ep) ----------------------------------- */
+#cn-videopage-relatedinfo-container {
+	float: left;
+	background-color: #FFFFFF;
+	width: 62%;
+	margin-left: 16px;
+}
+#cn-videopage-relatedinfo-container.no-clips-related {
+	float: right;
+	margin: 0 24px 0 0;
+}
+.cn-videopage-relatedinfo-entry-wrapper{display:inline-table; width:100%;}
+#cn-videopage-relatedinfo-header {
+	background-color:#FFF;
+	margin: 20px auto;
+}
+
+#cn-videopage-relatedinfo-header-sm{
+	display:block;
+	font: 28px 'avenir-next-rounded-std-med',arial,Helvetica,sans-serif; /* low 40px */
+	padding: 10px 0 0;
+}
+#cn-videopage-relatedinfo-header-lg{
+	float: left;
+	display: none;
+	font: normal 20px "avenir-next-rounded-std-med",arial,Helvetica,sans-serif;
+}
+
+#cn-videopage-relatedinfo {
+	border-bottom: 1px solid black;
+	margin: 0 auto 10px auto;
+	padding: 0 0 20px 0;
+}
+.cn-videopage-relatedinfo-entry {
+	width: 50%;
+	float:left;
+	margin-top: 10px;
+	display: display;
+	vertical-align: top;
+ }
+#get-flash-link {
+ 	color:#fff;
+ 	text-decoration:underline;
+}
+.cn-videopage-relatedinfo-number-wrapper{width:49px; height:49px; background-color:#063; text-align:center; position:absolute; z-index:2; -moz-box-shadow: 2px 2px 2px 0px #333; -webkit-box-shadow: 2px 2px 2px 0px #333; box-shadow: 2px 2px 2px 0px #333;}
+.cn-videopage-relatedinfo-number-shadow{width:13px; height:8px; position:absolute; z-index:1; margin-top:36px;}
+.cn-videopage-relatedinfo-number{font-family:"cn-bold"; font-size:33px; color:#FFF; height:auto; width:auto; margin-top: 0px; line-height: 49px; }
+.cn-videopage-relatedinfo-img{
+	float:left;
+	width:94%;
+	height:auto;
+} /*min-width:253px; min-height:145px; */
+.cn-videopage-relatedinfo-number-rightnow{display:none;}
+.cn-videopage-relatedinfo-thumb{margin-left:13px; margin-top:8px;}
+.cn-videopage-relatedinfo-thumb-anchor{display:block; position:relative;}
+.cn-videopage-relatedinfo-thumb-right-now { display:block; width:100%; }
+.cn-videopage-relatedinfo-thumb-img{display: block; border:2px solid #c1c1c1; width:100%; height:auto;} /*width:236px; height:133px; */
+#cn-videopage-relatedinfo a .cn-videopage-relatedinfo-thumb-overlay {
+	display:block;
+	height:97.5%;
+	left:2px;
+	position:absolute;
+	top:2px;
+	width: 100%;
+}
+#cn-videopage-relatedinfo a .cn-videopage-relatedinfo-thumb-hover {
+	display:none;
+	height:97.5%;
+	left:2px;
+	position:absolute;
+	top:2px;
+	width: 100%;
+}
+#cn-videopage-relatedinfo a .cn-videopage-relatedinfo-thumb-hover img {
+	display: block;
+	margin: 0 auto;
+	padding-top: 15%;
+	width: 30%;
+}
+#cn-videopage-relatedinfo a:hover .cn-videopage-relatedinfo-thumb-hover {
+	background-color: rgba(0,0,0,0.4);
+	display:block;
+	height:97.5%;
+	left:2px;
+	position:absolute;
+	top:2px;
+	width: 100%;
+}
+.cn-videopage-relatedinfo-title {
+	clear: left;
+	font-weight: bold;
+	font-size: 14px;
+	margin: 0 auto 0 16px;
+	padding: 10px 0 4px 0;
+	width: 94%;
+}
+.cn-videopage-relatedinfo-time {
+	font-size: 12px;
+	width: 94%;
+	margin: 0 auto 0 16px;
+}
+
+/* Up Next Link & Arrow */
+#cn-videopage-relatedinfo-upnext{
+	clear: both;
+	height: auto;
+	margin: 0 auto;
+	min-height: 68px;
+	padding: 10px 0 10px 0;
+	width: 100%;
+}
+#cn-videopage-relatedinfo-upnext_copy{
+	float: right;
+	cursor: pointer;
+	padding: 0 12px 0 0;
+	text-align: right;
+	width: 70%;
+}
+#cn-videopage-relatedinfo-upnext_next {  }
+#cn-videopage-relatedinfo-upnext_next a{
+	font-family:"cn-bold";
+	font-size:26px;
+	color:#000;
+	text-decoration:none;
+	width:auto;
+}
+#cn-videopage-relatedinfo-upnext_arrow {
+	background: #c1c1c1;
+	float:right;
+	cursor:pointer;
+}
+#cn-videopage-relatedinfo-upnext_arrow img {
+	float: left;
+}
+#cn-videopage-relatedinfo-upnext_show{ }
+#cn-videopage-relatedinfo-upnext_show a{
+	font-family:"avenir-next-rounded-std-med";
+	font-size:20px;
+	color:#000;
+	text-decoration:none;
+	width:auto;
+}
+/* ---------- */
+
+
+/*--- Collection view --------------------------------------- */
+#cn-videopage-epinfo-container-collectionview{width:100%; background-color:#FFF; padding: 20px 0 0 0;}
+#cn-videopage-epinfo-collectionview{ font-family:"avenir-next-rounded-std-med"; float:left; margin: 0 0 10px 25px; }
+#cn-videopage-ep-season-collectionview{font-family:"cn-bold"; font-size:11px; width:100%; max-width:608px; float:left; padding-top:6px; padding-left:6px;}
+#cn-videopage-ep-title-collectionview{ font-size:28px; width:auto; max-width:608px; float:left; padding-top:2px; padding-left:6px;}
+#cn-videopage-ep-videocollection-collectionview{ color:#8d8d8d; font:19px "avenir-next-rounded-std-med",arial,helvetica,sans-serif; width:auto; float:left; margin-top:4px; margin-left:6px; clear:left;}
+#cn-videopage-ep-videocollection-number-collectionview{color:#FFF; background-color:black; font: 17px "avenir-next-rounded-std-med",arial,helvetica,sans-serif; width:auto; padding-left: 10px; padding-right: 10px;
+padding-top:2px; padding-bottom:2px; float:left; margin-top:2px; margin-left:14px; }
+#cn-videopage-ep-rating-collectionview{clear:left; height:25px; float:left; width:24px; height:24px; margin-left:6px; margin-top:6px;}
+#cn-videopage-ep-airdate-collectionview{display:none;}
+#cn-videopage-ep-comments-collectionview{margin-top:25px;text-align:center; padding-top:6px; border-radius:7px; float:left; background-color:#000; color:#FFF; font-size:12px; height:15px; min-width:43px;
+font-weight:bold; font-family:Arial, Helvetica, sans-serif; display:none;}
+#cn-videopage-ep-description-btn-collectionview{display:none;}
+#cn-videopage-ep-description-btn-collectionview a{font-family:Arial, Helvetica, sans-serif; font-weight:bold; font-size:9px; text-decoration:none; padding:5px; border: solid 1px; color:#000; width:auto;
+height:auto;}
+#cn-videopage-ep-description-copy-collectionview{font-size:15px; float:left; clear:both; margin-left:26px; margin-top:20px; display:none; line-height: 1.3;}
+#cn-videopage-ep-watchfullepisode-collectionview{margin-left:6px; margin-right:6px; border-radius:7px; display:block; clear:both; background-color:#ec008c; padding:10px; display:none; cursor:pointer;}
+#cn-videopage-ep-watchfullepisode-link-collectionview{padding-left:18px; display: table-cell; vertical-align: middle;font-family:"cn-bold"; font-size:15px; color:#FFF; text-decoration:none;}
+#cn-videopage-ep-watchfullepisode-img-collectionview{display: table-cell; vertical-align: middle;}
+/*#cn-videopage-ep-watchfullepisode-img-collectionview img{background-color:#000; border:1px solid #FFF; width:107px; height:62px;}*/
+/*.cn-videopage-ep-hr-collectionview{clear:both; display:none;}*/
+
+#cn-videopage-relatedinfo-container-collectionview {background-color: #fff; clear: both; padding: 10px 0 0 0; }
+.cn-videopage-relatedinfo-entry-wrapper-collectionview {margin-left:auto; margin-right:auto; width:97%;}
+#cn-videopage-relatedinfo-header-collectionview {width:100%; background-color:#FFF; float:left; margin-bottom:50px;}
+#cn-videopage-relatedinfo-header-sm-collectionview {float:left; display:block; font-family:"avenir-next-rounded-std-med"; font-style:normal; font-size:40px;}
+#cn-videopage-relatedinfo-header-lg-collectionview {float:left; display:none; font-family:"avenir-next-rounded-std-med"; font-style:normal; font-size:26px;}
+#cn-videopage-relatedinfo-collectionview { }
+.cn-videopage-relatedinfo-entry-collectionview {
+	float:left;
+	margin: 0 8px 8px 0;
+	width: 32%;
+	min-height: 245px;
+}
+.cn-videopage-relatedinfo-number-wrapper-collectionview {
+	width:49px;
+	height:49px;
+	background-color:#063;
+	text-align:center;
+	position:absolute;
+	z-index:2;
+	-moz-box-shadow: 2px 2px 2px 0px #333;
+	-webkit-box-shadow: 2px 2px 2px 0px #333;
+	box-shadow: 2px 2px 2px 0px #333;
+}
+.cn-videopage-relatedinfo-number-shadow-collectionview {width:13px; height:8px; position:absolute; z-index:1; margin-top:37px;}
+.cn-videopage-relatedinfo-number-collectionview {font-size:33px; font-family: "cn-bold"; color:#FFF; height:auto; width:auto; margin-top: 0px; line-height: 49px; }
+.cn-videopage-relatedinfo-img-collectionview {
+	float: left;
+	height: auto;
+	width: 94%;
+}
+.cn-videopage-relatedinfo-number-rightnow-collectionview{display:none;}
+.cn-videopage-relatedinfo-thumb-collectionview {
+	padding:8px 0 6px 13px;
+	width: 100%;
+}
+.cn-videopage-relatedinfo-thumb-img-collectionview{
+	display: block;
+	border: 2px solid #c1c1c1;
+	width: 100%;
+	height: auto;
+}
+.cn-videopage-relatedinfo-title-collectionview{
+	clear: right;
+	font-size: 14px;
+	font-weight: bold;
+	float: left;
+	margin: 4px 0 0 16px;
+	width: 94%;
+}
+.cn-videopage-relatedinfo-time-collectionview{
+	float:left;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	margin: 2px 0 0 16px;
+	width: 94%;
+}
+#cn-videopage-relatedinfo-upnext-collectionview{clear:both; padding-top:33px;}
+#cn-videopage-relatedinfo-upnext_copy-collectionview{float:left;}
+#cn-videopage-relatedinfo-upnext_next-collectionview{float:left; width:auto;}
+#cn-videopage-relatedinfo-upnext_next-collectionview a{float:left; font-family:"cn-bold"; font-size:26px; color:#000; text-decoration:none; width:auto;}
+#cn-videopage-relatedinfo-upnext_arrow-collectionview{float:right; margin-left:25px; margin-right:13px; margin-bottom:51px; cursor:pointer;}
+#cn-videopage-relatedinfo-upnext_show-collectionview{clear:left; float:right; width:auto;}
+#cn-videopage-relatedinfo-upnext_show-collectionview a{clear:left; float:right; font-family:Arial, Helvetica, sans-serif; font-size:22px; color:#000; text-decoration:none; width:auto;}
+#cn-videopage-relatedinfo-collectionview a .cn-videopage-relatedinfo-thumb-collectionview-overlay {
+	display:block;
+	height:97.5%;
+	left:2px;
+	position:absolute;
+	top:2px;
+	width: 100%;
+}
+#cn-videopage-relatedinfo-collectionview a .cn-videopage-relatedinfo-thumb-collectionview-hover {
+	display:none;
+	height:97.5%;
+	left:2px;
+	position:absolute;
+	top:2px;
+	width: 100%;
+}
+#cn-videopage-relatedinfo-collectionview a .cn-videopage-relatedinfo-thumb-collectionview-hover img {
+	display: block;
+	margin: 0 auto;
+	padding-top: 15%;
+	width: 30%;
+}
+#cn-videopage-relatedinfo-collectionview a:hover .cn-videopage-relatedinfo-thumb-collectionview-hover {
+	background-color: rgba(0,0,0,0.4);
+	display:block;
+	height:97.5%;
+	left:2px;
+	position:absolute;
+	top:2px;
+	width: 100%;
+}
+#cn-videopage-next-ep-backup-link {
+	display: block;
+    float:right; 
+    font-family: "cn-bold";
+    font-size: 19px;
+    margin: 20px auto; 
+	text-align: center;
+    text-transform:uppercase;
+}
+#cn-videopage-next-ep-backup-link:hover {
+    color: black;
+}
+
+/* ---------- */
+#cn-videopage-links{clear:both; float:left;}
+
+
+#cn-videopage-moreinfo-container{clear:both; /*padding-top:26px;*/ }
+#cn-videopage-moreinfo-container-collectionview{clear:both; padding-top:5px;}
+
+#cn-videopage-videonavigation-collectionview{width:100%; background-color:#FFF; margin-bottom:30px;}
+
+
+/*--- End Slate Video Player ---*/
+#slate-content-wrapper {
+	display: none;
+	background: url(/static/images/video-player/slate-bg.png) 0 0 repeat;
+	position: relative;
+	padding-bottom: 10%;
+	z-index: 100;
+}
+#slate-content-wrapper .slate-next-video-wrapper {
+	background: #fff;
+	border: 3px solid #fff;
+	height: 80px;
+	margin: 3% auto;
+	width: 80%;
+}
+#slate-content-wrapper .slate-hero {
+	cursor: pointer;
+	width: 100%;
+}
+#slate-content-wrapper .slate-next-video-left {
+	background: url(/static/images/video-player/slate-next-video-arrow.png) center right no-repeat #000;
+	float: left;
+	height: 80px;
+	width: 70%;
+}
+#slate-content-wrapper .slate-next-video-text {
+	color: #fff;
+	float: left;
+	font-family: 'avenir-next-rounded-std-med', arial, sans-serif;
+	font-size: 34px;
+	line-height: 80px;
+	margin: 0 2% 0 10%;
+	margin-left: 5%;
+	text-align: right;
+	text-transform: uppercase;
+	width: 75%;
+}
+#slate-content-wrapper #slate-next-video-timer {
+	color: #fff;
+	font-family: 'cn-bold', arial, sans-serif;
+	font-size: 50px;
+	float: left;
+	line-height: 80px;
+	width: 10%;
+}
+#slate-content-wrapper .slate-next-video-right {
+	background: #fff;
+	float: left;
+	height: 70px;
+	padding-top: 10px;
+	width: 30%;
+}
+#slate-content-wrapper .slate-next-video-right a {
+	color: #000;
+	display: block;
+	float: left;
+	text-decoration: none;
+}
+#slate-content-wrapper .slate-next-video-image {
+	border: 2px solid #000;
+	float: left;
+	margin: 0 0 5% 5%;
+	width: 40%;
+}
+#slate-content-wrapper .slate-next-video-title {
+	color: #000;
+	font: bold 13px arial, sans-serif;
+	float: left;
+	height: 32px;
+	margin: 10px 0 0 10px;
+	overflow: hidden;
+	width: 45%;
+}
+#slate-content-wrapper .slate-next-video-length {
+	color: #000;
+	float: left;
+	font: normal 11px arial, sans-serif;
+	margin-left: 10px;
+	width: 45%;
+}
+
+#slate-content-wrapper .slate-next-video-image img {
+	display:block;
+	max-width: 98px;
+	width: 100%;
+}
+
+#app-slate-content-wrapper .app-slate-content-wrapper {
+	background: url(/static/images/video-player/slate-bg.png) 0 0 repeat;
+	padding: 5% 0 20% 0;
+}
+#app-slate-content-wrapper .app-slate-next-video-left {
+	border: 3px #fff solid;
+	float: left;
+	width: 63%;
+}
+#app-slate-content-wrapper .app-slate-next-video-right {
+	background: #fff;
+	border: 3px solid #fff;
+	display: block;
+	float: left;
+	margin-left: 2%;
+	width: 25%;
+}
+#app-slate-content-wrapper .app-slate-next-video-right img, #app-slate-content-wrapper .app-slate-next-video-left img  {
+	display: block;
+	width: 100%;
+}
+#app-slate-content-wrapper .app-slate-next-video-wrapper {
+	width: 60%;
+	margin: 6% auto;
+}
+#app-slate-content-wrapper .app-slate-next-video-wrapper a {
+	display: block;
+	float: left;
+	width: 100%;
+}
+#app-slate-content-wrapper .app-slate-content-wrapper img {
+	display: block;
+	width: 100%;
+}
+#playerarea #app-slate-hero {
+	display: block;
+    width: 100%;
+    height: 100%;
+}
+#playerarea #app-slate-hero img{
+	display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#livestream-partner {
+	background-position: right center;
+	background-repeat: no-repeat;
+	display: none;
+	position: absolute;
+	right: 10px;
+	text-transform: none;
+	top: 5px;
+	width: 275px;
+	height: 50px;
+}
+#livestream-partner.active {
+	display: block;
+}
+
+
+
+/* Lo Res - 320/480 ---------------------------------- */
+@media only screen and (min-width:300px) and (max-width:480px) {
+
+	#cn-videopage-property-prewiew {
+		float: none;
+		text-align: center;
+		margin-top: 0px;
+		width: 100%;
+		padding-right: 0px;
+		box-shadow: 0px 0px 8px #333333;
+		-webkit-box-shadow: 0px 0px 8px #333333;
+		-moz-box-shadow: 0px 0px 8px #333333;
+	}
+	#cn-videopage-property-prewiew-copy {
+		margin: 0 auto;
+		height: 22px;
+		padding-top: 2px;
+	}
+	#cn-videopage-property-prewiew-copy img {
+		height: 90%;
+	}
+
+	/* Episode Info */
+	#cn-videopage-epinfo-container {
+		border: none;
+		float:none;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		height: auto;
+		min-height: inherit;
+	}
+	#cn-videopage-epinfo {
+		float: none;
+		padding: 15px 0 0 0;
+		margin: 0 auto;
+		width: 94%;
+	}
+	#cn-videopage-ep-season {
+		font: 16px 'cn-bold',arial,Helvetica,sans-serif;
+	}
+	#cn-videopage-ep-title {
+		font-size: 20px;
+		margin: 0 0 14px;
+	}
+	#cn-videopage-ep-rating {
+		height: 16px;
+		padding: 0 4px;
+		width: 16px;
+		margin-top: 2px;
+	}
+	#cn-videopage-ep-rating img {
+		width: 100%;
+		height: 100%;
+	}
+	#cn-videopage-ep-airdate {
+		font-size: 11px;
+		height: 18px;
+		line-height: 18px;
+		padding: 0 4px;
+		margin-top: 2px;
+	}
+	#cn-videopage-ep-comments {
+		margin: 0 0 20px 8px;
+	}
+	#cn-videopage-ep-description-btn {
+		display: block;
+		height: 18px;
+		line-height: 18px;
+	}
+	#cn-videopage-ep-description-btn a {
+		font-size: 11px;
+		padding: 3px;
+	}
+	/* Description Copy - toggle */
+	#cn-videopage-ep-description-copy { display: none; }
+
+	/* hr */
+	#cn-videopage-epinfo .hr { display: block; }
+
+	/* Full Episode Button */
+	#cn-videopage-ep-watchfullepisode {
+		margin: 0 0 20px 0;
+	}
+	#cn-videopage-ep-watchfullepisode-link {
+		padding-left: 18px;
+	}
+	#cn-videopage-ep-watchfullepisode-img {
+		min-width: 24%;
+	}
+	#cn-videopage-ep-watchfullepisode-img img { }
+
+	/* Related Video (next ep) */
+	#cn-videopage-relatedinfo-container {
+		margin-left: 0;
+		width: 100%;
+	}
+	#cn-videopage-relatedinfo-container.no-clips-related {		
+		margin: 0;
+	}	
+	#cn-videopage-relatedinfo-header {
+		margin: 2px auto;
+		width: 94%;
+	}
+
+	/* Collection view*/
+	#cn-videopage-ep-rating-collectionview { margin-top: 6px; width: 20px; }
+	#cn-videopage-ep-rating-collectionview img { width: 90%; height: auto; }
+	#cn-videopage-ep-title-collectionview { font-size: 22px;}
+	#cn-videopage-ep-videocollection-collectionview { font: 14px "avenir-next-rounded-std-med",arial,helvetica,sans-serif; }
+	#cn-videopage-ep-videocollection-number-collectionview { font: 13px "avenir-next-rounded-std-med",arial,helvetica,sans-serif; }
+
+	/* clip collection version */
+	#cn-videopage-relatedinfo-header-collectionview {margin-bottom:25px; width:auto; margin-top:0px; margin-left:0px;}
+	#cn-videopage-relatedinfo-header-sm-collectionview {display:none;}
+	#cn-videopage-relatedinfo-header-lg-collectionview {display:block;}
+	#cn-videopage-relatedinfo-container-collectionview {width:100%; height:auto;}
+	#cn-videopage-relatedinfo-collectionview {background-color:#FFF;}
+	.cn-videopage-relatedinfo-entry-wrapper-collectionview {margin-left:auto; margin-right:auto; width:97%;}
+	.cn-videopage-relatedinfo-entry-collectionview {
+		background: url("../../../static/images/property-more/property-more-dot.png") repeat-x left bottom;
+		background-size: 8px 2px;
+		float: left;
+		margin: 0 2.1% 0 1%;
+		padding: 20px 0 25px 0;
+		width: 94%;
+		min-height: inherit;
+	}
+	.cn-videopage-relatedinfo-entry-collectionview:last-child {
+		background: none;
+	}
+	.cn-videopage-relatedinfo-number-wrapper-collectionview{width:43px; height:43px;}
+	.cn-videopage-relatedinfo-number-collectionview{font-size:31px; line-height: 43px; }
+	.cn-videopage-relatedinfo-img-collectionview { width: 50%; }
+	.cn-videopage-relatedinfo-thumb-collectionview {padding-left:13px; padding-top:8px; padding-bottom:6px;}
+	.cn-videopage-relatedinfo-thumb-img-collectionview {display: block; border:2px solid #c1c1c1; height:auto;}
+	.cn-videopage-relatedinfo-title-collectionview {
+		float:left;
+		font-size: 14px;
+		font-weight:bold;
+		width: 40%;
+		margin-left: 12px;
+		margin-top:0px;
+		padding-left:4.5%;
+		padding-top: 10px;
+	}
+	.cn-videopage-relatedinfo-time-collectionview{
+		font-size: 12px;
+		font-style: normal;
+		margin: 4px 0 0 12px;
+		padding-left: 4.5%;
+		width: 40%;
+	}
+	.cn-videopage-relatedinfo-pad-collectionview{}
+	/* ----------------------- */
+
+	/* Related Video - vertical alignment */
+	#cn-videopage-relatedinfo {
+		width: 94%;
+		margin-bottom: 10px;
+	}
+	#cn-videopage-relatedinfo-header {
+		margin: 2px auto;
+	}
+	#cn-videopage-relatedinfo-header-lg {}
+	#cn-videopage-relatedinfo-header-sm {
+		font-size: 24px;
+	}
+	#cn-videopage-relatedinfo a:hover .cn-videopage-relatedinfo-thumb-hover { display:none; }
+	.cn-videopage-relatedinfo-entry {
+		background: url("../../../static/images/property-more/property-more-dot.png") repeat-x left bottom;
+		background-size: 8px 2px;
+		margin: 0;
+		padding: 20px 0 20px 0;
+		width: 100%;
+		min-height: inherit;
+	}
+	.cn-videopage-relatedinfo-entry:last-child { background: none; }
+
+	.cn-videopage-relatedinfo-img {
+		float: left;
+		margin: 0 18px 0 0;
+		width: 50%;
+	}
+	.cn-videopage-relatedinfo-title {
+		clear: right;
+		font-size: 14px;
+		float: left;
+		margin: 0;
+		padding: 10px 0 4px;
+		width: 40%;
+	}
+	.cn-videopage-relatedinfo-time {
+		clear: right;
+		float: left;
+		margin: 0;
+		width: 40%;
+	}
+
+	/* Up Next */
+	#cn-videopage-relatedinfo-upnext {
+		padding: 10px 0 10px 0;
+		width: 94%;
+	}
+	.no-clips-related #cn-videopage-relatedinfo-upnext {
+		border-top: 1px solid #000;	
+	}
+	#cn-videopage-relatedinfo-upnext_arrow { margin-bottom: 18px; }
+	#cn-videopage-relatedinfo-upnext_copy {
+		float: left;
+		margin: 5px 0 0 0;
+		text-align: left;
+	}
+	#cn-videopage-relatedinfo-upnext_next a { font-size: 18px; }
+	#cn-videopage-relatedinfo-upnext_show { padding-bottom: 15px; }
+	#cn-videopage-relatedinfo-upnext_show a { font-size: 12px; }
+
+	#cn-videopage-next-ep-backup-link {
+		float: none;
+	    width: 90%;
+	}
+	#cn-videopage-videonavigation-collectionview #show-more-container {
+    	background: none;
+    }
+}
+
+/* Mid Res - 600/800 ---------------------------------- */
+@media only screen and (min-width:481px) and (max-width:767px) {
+
+	#cn-videopage-property-prewiew {
+		float: none;
+		text-align: center;
+		margin-top: 0px;
+		width: 100%;
+		padding-right: 0px;
+		box-shadow: 0px 0px 8px #333333;
+		-webkit-box-shadow: 0px 0px 8px #333333;
+		-moz-box-shadow: 0px 0px 8px #333333;
+	}
+	#cn-videopage-property-prewiew-copy {
+		margin: 0 auto;
+		height: 22px;
+	}
+
+	/* Episode Info */
+	#cn-videopage-epinfo-container {
+		border: none;
+		float: none;
+		padding: 0;
+		width: 94%;
+		height: auto;
+		min-height: inherit;
+	}
+	#cn-videopage-epinfo {
+		float: none;
+		padding: 0;
+		margin: 0 auto;
+	}
+	#cn-videopage-ep-season { font-size: 18px; }
+	#cn-videopage-ep-title {
+		font-size: 20px;
+		margin: 0 0 16px;
+	}
+	#cn-videopage-ep-rating {
+		height: 20px;
+		margin-top: 2px;
+		padding: 0 4px 0 0;
+		width: 20px;
+	}
+	#cn-videopage-ep-rating img {
+		width: 100%;
+		height: 100%;
+	}
+	#cn-videopage-ep-airdate {
+		font-size: 13px;
+		height: 22px;
+		margin-top: 2px;
+		line-height: 22px;
+		padding: 0 4px;
+	}
+	#cn-videopage-ep-comments {
+		margin: 0 0 20px 8px;
+	}
+	#cn-videopage-ep-description-btn {
+		display: block;
+		height: 22px;
+		line-height: 22px;
+	}
+	#cn-videopage-ep-description-btn a {
+		font-size: 12px;
+		padding: 4px;
+	}
+
+	/* hr */
+	#cn-videopage-epinfo .hr { display: block; }
+
+	/* Description Copy - toggle */
+	#cn-videopage-ep-description-copy { display: none; }
+		/* Full Episode Button */
+	#cn-videopage-ep-watchfullepisode {
+		margin: 0 0 20px 0;
+	}
+	#cn-videopage-ep-watchfullepisode-link { font-size: 28px; }
+
+	/* related video */
+	/* Related Video - vertical alignment */
+	#cn-videopage-relatedinfo-container {
+		clear: both;
+		margin: 0 auto 0 16px;
+		width: 94%;
+	}
+	#cn-videopage-relatedinfo-container.no-clips-related {
+		float: none;
+		margin: 0 auto;
+	}
+	#cn-videopage-relatedinfo-header {
+		float: none;
+		margin: 10px auto;
+	}
+	.no-clips-related #cn-videopage-relatedinfo-upnext {
+		border-top: 1px solid #000;	
+	}
+	#cn-videopage-relatedinfo-header-sm { font-size: 32px; }
+	#cn-videopage-relatedinfo a:hover .cn-videopage-relatedinfo-thumb-hover { display:none; }
+	.cn-videopage-relatedinfo-entry-collectionview {
+		background: url("../../../static/images/property-more/property-more-dot.png") repeat-x left bottom;
+		background-size: 8px 2px;
+		float: left;
+		margin: 0 2.1% 0 1%;
+		padding: 20px 0 25px 0;
+		width: 97%;
+		min-height: inherit;
+	}
+	.cn-videopage-relatedinfo-entry-collectionview:last-child {
+		background: none;
+	}
+	.cn-videopage-relatedinfo-img-collectionview { width: 50%; }
+	.cn-videopage-relatedinfo-title-collectionview { width: 45%; }
+	.cn-videopage-relatedinfo-time-collectionview { width: 45%; }
+	.cn-videopage-relatedinfo-thumb-img-collectionview {display: block; border:2px solid #c1c1c1; height:auto;}
+	.cn-videopage-relatedinfo-title-collectionview {
+		float: left;
+		font-size: 14px;
+		font-weight: bold;
+		margin-left: 12px;
+		margin-top: 0;
+		padding-left: 4.5%;
+		padding-top: 10px;
+		width: 40%;
+	}
+	.cn-videopage-relatedinfo-time-collectionview{
+		font-size: 12px;
+		font-style: normal;
+		margin: 4px 0 0 12px;
+		padding-left: 4.5%;
+		width: 40%;
+	}
+
+
+	.cn-videopage-relatedinfo-title,
+	.cn-videopage-relatedinfo-time { margin: 0 0 0 13px; }
+
+
+	/* ----------------------- */
+
+	#cn-videopage-relatedinfo-upnext_arrow { margin-bottom: 18px; }
+
+	#cn-videopage-relatedinfo-upnext_copy {
+		margin: 10px 10px 0 0;
+	}
+	#cn-videopage-relatedinfo-upnext_next a { font-size: 20px; }
+	#cn-videopage-relatedinfo-upnext_show { padding-bottom: 15px; }
+	#cn-videopage-relatedinfo-upnext_show a { font-size: 16px; }
+
+	#cn-videopage-next-ep-backup-link {
+		float: none;
+		width: 90%;
+	}
+	#cn-videopage-videonavigation-collectionview #show-more-container {
+    	background: none;
+    }
+}
+
+/* Hi Res - 768/1024 ---------------------------------- */
+@media only screen and (min-width:768px) and  (max-width:1023px){
+
+	#cn-videopage-property-prewiew {
+		float: none;
+		text-align: center;
+		margin-top: 0px;
+		width: 100%;
+		padding-right: 0px;
+		box-shadow: 0px 0px 8px #333333;
+		-webkit-box-shadow: 0px 0px 8px #333333;
+		-moz-box-shadow: 0px 0px 8px #333333;
+	}
+	#cn-videopage-property-prewiew-copy {
+		margin: 0 auto;
+		height: 22px;
+	}
+
+
+	/* episode info - horizontal */
+	#cn-videopage-epinfo-container {
+		border: 10px solid #c1c1c1;
+		float: left;
+		margin: 20px 16px;
+		padding: 0 6px;
+		/*min-width: 240px;*/
+		width: 33%;
+	}
+	#cn-videopage-epinfo { padding: 10px 3%; }
+	#cn-videopage-ep-season { font-size: 16px; }
+	#cn-videopage-ep-title { font-size: 18px; }
+	#cn-videopage-ep-rating {
+		height: 20px;
+		padding: 0 4px 0 0;
+		width: 20px;
+	}
+	#cn-videopage-ep-rating img {
+		width: 100%;
+		height: 100%;
+	}
+	#cn-videopage-ep-airdate {
+		font-size: 13px;
+		height: 22px;
+		line-height: 22px;
+		padding: 0 4px;
+	}
+	#cn-videopage-ep-comments {
+		margin: 0 0 20px 8px;
+	}
+	#cn-videopage-ep-description-btn { display: none; }
+	#cn-videopage-ep-description-copy { border: none; font-size: 14px; margin: 0; }
+
+
+	/* Full Episode Button */
+	#cn-videopage-ep-watchfullepisode {
+		padding: 6px 10px;
+	}
+	#cn-videopage-ep-watchfullepisode-img {
+		height: 50px;
+		margin: 5px 0 0;
+		width: 82px;
+	}
+	#cn-videopage-ep-watchfullepisode-img img {
+		height: 50px;
+		width: 82px;
+	}
+	#cn-videopage-ep-watchfullepisode-link {
+		font-size: 16px;
+		padding-left: 12px;
+	}
+
+	/* episode hover */
+	#cn-videopage-ep-watchfullepisode .cn-videopage-ep-watchfullepisode-hover {
+		height: 44px;
+		margin: 6px 0 0 -22px;
+		width: 44px;
+	}
+
+	/* Description Copy - toggle */
+	#cn-videopage-ep-description-copy { display: block; }
+
+	/* related video - horizontal */
+	#cn-videopage-relatedinfo-container { float: left; margin-left: 0; width: 57%; }
+	#cn-videopage-relatedinfo-header {
+		border-top: none;
+		margin: 20px auto 0px auto;
+	}
+	#cn-videopage-relatedinfo-header-sm { font-size: 28px; }
+	#cn-videopage-relatedinfo a:hover .cn-videopage-relatedinfo-thumb-hover { display:none; }
+	.cn-videopage-relatedinfo-entry {
+		min-height: 220px;
+	}
+	.cn-videopage-relatedinfo-title,
+	.cn-videopage-relatedinfo-time  {
+		font-size: 14px;
+		margin: 0 auto 0 16px;
+	}
+
+	/* Up next */
+	#cn-videopage-relatedinfo-upnext_copy {
+		float: right;
+		padding-right: 20px;
+		text-align: right;
+	}
+	#cn-videopage-relatedinfo-upnext_next a { font-size: 24px; }
+	#cn-videopage-relatedinfo-upnext_show a { font-size: 16px; }
+
+		/* Collection view*/
+
+
+		/* clip collection version */
+	.cn-videopage-relatedinfo-entry-collectionview {
+		background: none;
+		float: left;
+		margin: 0 8px 8px 0;
+		width: 32%;
+		min-height: 220px;
+	}
+	.cn-videopage-relatedinfo-img-collectionview {
+		width: 94%;
+	}
+	.cn-videopage-relatedinfo-thumb-collectionview {
+		width: 100%;
+	}
+	.cn-videopage-relatedinfo-title-collectionview {
+		font-size: 14px;
+		margin: 4px 0 0 16px;
+		width: 94%;
+	}
+	.cn-videopage-relatedinfo-time-collectionview {
+		width: 94%;
+	}
+	/* ----------------------- */
+
+    #cn-videopage-watchlivetv{display:none;}
+    #cn-videopage-seeapps{display:none;}
+   	#cn-videopage-backtotop{display:none;}
+    #cn-videopage-community{display:none;}
+	#cn-videopage-onnow{display:none;}
+
+	#cn-videopage-relatedinfo-upnext{clear:both; padding: 10px 0 10px 0; }
+	#cn-videopage-relatedinfo-upnext_copy{float:right; width: 70%; }
+	#cn-videopage-relatedinfo-upnext_next{
+		float:right;
+		font-family:"cn-bold";
+		font-size:26px;
+		color:#000;
+		text-decoration:none;
+		width:auto;
+	}
+	#cn-videopage-relatedinfo-upnext_arrow{
+		background: #ccc;
+		float:right;
+		height: 68px;
+		margin-left: 0;
+		margin-right: 13px;
+		width: 68px;
+		margin-bottom: 18px;
+	}
+	#cn-videopage-relatedinfo-upnext_show {
+		clear:right;
+		float:right;
+		font-family:"avenir-next-rounded-std-med";
+		font-size:20px;
+		color:#000;
+		text-decoration:none;
+		width:auto;
+		max-width:400px;
+		text-align:right;
+		padding-bottom: 15px;
+		line-height: 18px;
+	}
+}
+
+/* Desktop Widescreen - 768/1024 ----------------------- */
+@media only screen and (min-width:1024px){
+
+	#cn-videopage-property-prewiew{
+		float: right;
+		text-align: center;
+		margin-top: -50px;
+		width: auto;
+		padding-right: 20px;
+		box-shadow: none;
+	}
+	#cn-videopage-property-prewiew-copy{
+		width: auto;
+		padding: 5px;
+		margin-top: 4px;
+		height: 22px;
+		font-weight: normal;
+		font-size: 20px;
+	}
+	#cn-videopage-property-prewiew a{
+		display:block;
+	}
+
+	#cn-videopage-relatedinfo a:hover .cn-videopage-relatedinfo-thumb-hover { display:block; }
+
+		/* Description Copy - toggle */
+	#cn-videopage-ep-description-copy { display: block; }
+
+	/* episode hover */
+	#cn-videopage-ep-watchfullepisode .cn-videopage-ep-watchfullepisode-hover {
+		height: 40px;
+		margin: 7px 0 0 -16px;
+		width: 40px;
+	}
+
+	/* episode info - horizontal */
+	#cn-videopage-epinfo-container { width: 28%; }
+	#cn-videopage-relatedinfo-container { width: 64%; }
+
+	/* clip collection version */
+	.cn-videopage-relatedinfo-entry-collectionview {
+		background: none;
+		float: left;
+		margin: 0 10px 10px 0;
+		width: 32%;
+		min-height: 240px;
+	}
+	.cn-videopage-relatedinfo-img-collectionview {
+		width: 94%;
+	}
+	.cn-videopage-relatedinfo-thumb-collectionview {
+		width: 100%;
+	}
+	.cn-videopage-relatedinfo-title-collectionview {
+		margin: 4px 0 0 16px;
+		width: 94%;
+	}
+	.cn-videopage-relatedinfo-time-collectionview {
+		width: 94%;
+	}
+}
+
+/* this is to hide the full episode button's hover state on mobile */
+@media only screen and (max-width:1024px) {
+	#cn-videopage-ep-watchfullepisode:hover {
+		background-color:#ec008c;
+	}
+	#cn-videopage-ep-watchfullepisode:hover .cn-videopage-ep-watchfullepisode-hover,
+	#cn-videopage-ep-watchfullepisode:hover #cn-videopage-ep-watchfullepisode-hover-black,
+	#cn-videopage-relatedinfo-collectionview a:hover .cn-videopage-relatedinfo-thumb-collectionview-hover {
+		display: none;
+	}
+}
+
+
+/******************************** Stop Bullying site overrides **************************/
+body.stop-bullying {
+	background-color: white;
+}
+.stop-bullying #cn-videopage-videonavigation-collectionview,
+.stop-bullying #cn-videopage-relatedinfo-container-collectionview,
+.stop-bullying #cn-videopage-epinfo-container-collectionview {
+	background-color: transparent;
+}
+.stop-bullying #cn-videopage-epinfo-container-collectionview {
+	background-color: white;
+	border: 10px solid #c1c1c1;
+	margin: 30px auto;
+	width: 94%;
+}
+.stop-bullying #cn-videopage-ep-title {
+	font-family: "cn-bold", Arial, sans-serif;
+	font-size: 24px;
+}
+#sbsu-video-page .cn-videopage-relatedinfo-number-wrapper-collectionview {
+	background-color: #FFEA00;
+}
+#sbsu-speakup-page .cn-videopage-relatedinfo-number-wrapper-collectionview {
+	background-color: #F42D92;
+}
+#sbsu-video-page .cn-videopage-relatedinfo-number-collectionview {
+	color: black;
+}
